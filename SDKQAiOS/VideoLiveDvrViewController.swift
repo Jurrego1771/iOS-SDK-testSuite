@@ -27,6 +27,14 @@ class VideoLiveDvrViewController: UIViewController {
         return label
     }()
 
+    private func updateStateLabel(mode: String, event: String? = nil) {
+        var parts = ["mode=\(mode)"]
+        if let e = event {
+            parts.append("event=\(e)")
+        }
+        modeLabel.text = parts.joined(separator: " ")
+    }
+
     private lazy var modeSegmented: UISegmentedControl = {
         let control = UISegmentedControl(items: modes)
         control.selectedSegmentIndex = 0
@@ -85,9 +93,30 @@ class VideoLiveDvrViewController: UIViewController {
             modeSegmented.heightAnchor.constraint(equalToConstant: 32)
         ])
 
+        // Actualizar label con modo inicial
+        updateStateLabel(mode: modes[currentModeIndex])
+
+        // Escuchar eventos del SDK para actualizar el label
+        setupSDKEventListeners()
+
         mdstrm.setup(playerConfig)
         SDKEventListeners.attachAll(to: mdstrm)
         mdstrm.play()
+    }
+
+    private func setupSDKEventListeners() {
+        sdk?.events.listenTo(eventName: "ready") { [weak self] _ in
+            self?.updateStateLabel(mode: self?.modes[self?.currentModeIndex ?? 0] ?? "", event: "ready")
+        }
+        sdk?.events.listenTo(eventName: "play") { [weak self] _ in
+            self?.updateStateLabel(mode: self?.modes[self?.currentModeIndex ?? 0] ?? "", event: "play")
+        }
+        sdk?.events.listenTo(eventName: "pause") { [weak self] _ in
+            self?.updateStateLabel(mode: self?.modes[self?.currentModeIndex ?? 0] ?? "", event: "pause")
+        }
+        sdk?.events.listenTo(eventName: "seek") { [weak self] _ in
+            self?.updateStateLabel(mode: self?.modes[self?.currentModeIndex ?? 0] ?? "", event: "seek")
+        }
     }
 
     @objc private func modeChanged() {
