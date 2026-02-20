@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MediastreamPlatformSDKiOS
 
 /// Spy que acumula eventos del SDK y valores útiles para asserts en tests.
 class SDKEventSpy {
