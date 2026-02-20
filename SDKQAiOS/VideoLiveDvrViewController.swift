@@ -35,6 +35,42 @@ class VideoLiveDvrViewController: UIViewController {
         modeLabel.text = parts.joined(separator: " ")
     }
 
+    private func setupHiddenTestControls() {
+        // Botón de Play oculto para tests UI
+        let playButton = UIButton(type: .system)
+        playButton.setTitle("Play", for: .normal)
+        playButton.accessibilityIdentifier = "dvr.hostPlay"
+        playButton.isHidden = true
+        playButton.translatesAutoresizingMaskIntoConstraints = false
+        playButton.addTarget(self, action: #selector(hostPlayTapped), for: .touchUpInside)
+        view.addSubview(playButton)
+
+        // Botón de Pause oculto para tests UI
+        let pauseButton = UIButton(type: .system)
+        pauseButton.setTitle("Pause", for: .normal)
+        pauseButton.accessibilityIdentifier = "dvr.hostPause"
+        pauseButton.isHidden = true
+        pauseButton.translatesAutoresizingMaskIntoConstraints = false
+        pauseButton.addTarget(self, action: #selector(hostPauseTapped), for: .touchUpInside)
+        view.addSubview(pauseButton)
+
+        // Constraints fuera de pantalla (no afectan layout visible)
+        NSLayoutConstraint.activate([
+            playButton.topAnchor.constraint(equalTo: view.topAnchor, constant: -100),
+            playButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -100),
+            pauseButton.topAnchor.constraint(equalTo: view.topAnchor, constant: -100),
+            pauseButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -100)
+        ])
+    }
+
+    @objc private func hostPlayTapped() {
+        sdk?.play()
+    }
+
+    @objc private func hostPauseTapped() {
+        sdk?.pause()
+    }
+
     private lazy var modeSegmented: UISegmentedControl = {
         let control = UISegmentedControl(items: modes)
         control.selectedSegmentIndex = 0
@@ -72,6 +108,9 @@ class VideoLiveDvrViewController: UIViewController {
         bottomBar.addSubview(modeLabel)
         bottomBar.addSubview(modeSegmented)
 
+        // Botones ocultos para tests UI
+        setupHiddenTestControls()
+
         NSLayoutConstraint.activate([
             mdstrm.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             mdstrm.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -90,7 +129,15 @@ class VideoLiveDvrViewController: UIViewController {
             modeSegmented.topAnchor.constraint(equalTo: modeLabel.bottomAnchor, constant: 8),
             modeSegmented.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 16),
             modeSegmented.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor, constant: -16),
-            modeSegmented.heightAnchor.constraint(equalToConstant: 32)
+            modeSegmented.heightAnchor.constraint(equalToConstant: 32),
+
+            playButton.topAnchor.constraint(equalTo: modeSegmented.bottomAnchor, constant: 8),
+            playButton.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 16),
+            playButton.widthAnchor.constraint(equalToConstant: 60),
+
+            pauseButton.topAnchor.constraint(equalTo: modeSegmented.bottomAnchor, constant: 8),
+            pauseButton.leadingAnchor.constraint(equalTo: playButton.trailingAnchor, constant: 8),
+            pauseButton.widthAnchor.constraint(equalToConstant: 60)
         ])
 
         // Actualizar label con modo inicial
