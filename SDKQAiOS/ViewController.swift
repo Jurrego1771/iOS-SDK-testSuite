@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         table.delegate = self
         table.dataSource = self
         table.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseId)
+        table.accessibilityIdentifier = "testCases.table"
         return table
     }()
 

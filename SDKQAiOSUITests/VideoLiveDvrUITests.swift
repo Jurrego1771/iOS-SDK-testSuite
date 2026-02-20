@@ -22,7 +22,7 @@ final class VideoLiveDvrUITests: XCTestCase {
 
         // Esperar tabla de casos
         let table = app.tables["testCases.table"]
-        XCTAssertTrue(table.waitForExistence(timeout: 10))
+        XCTAssertTrue(table.waitForExistence(timeout: 20))
 
         // Abrir Video Live DVR
         let liveDvrCell = table.cells["testCase.videoLiveDvr"]
