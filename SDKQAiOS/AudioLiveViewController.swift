@@ -11,7 +11,7 @@ import MediastreamPlatformSDKiOS
 
 class AudioLiveViewController: UIViewController {
 
-    private var sdk: MediastreamPlatformSDK?
+    var sdk: MediastreamPlatformSDK?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -14,7 +14,7 @@ class VideoLiveDvrViewController: UIViewController {
     private let baseId = "5fd39e065d68477eaa1ccf5a"
     private let modes = ["Live", "DVR", "DVR Start", "DVR VOD"]
 
-    private var sdk: MediastreamPlatformSDK?
+    var sdk: MediastreamPlatformSDK?
     private var currentModeIndex = 0
 
     private lazy var modeLabel: UILabel = {

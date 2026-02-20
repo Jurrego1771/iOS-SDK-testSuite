@@ -10,7 +10,7 @@ import MediastreamPlatformSDKiOS
 
 class VideoVodSimpleViewController: UIViewController {
 
-    private var sdk: MediastreamPlatformSDK?
+    var sdk: MediastreamPlatformSDK?
 
     override func viewDidLoad() {
         super.viewDidLoad()
