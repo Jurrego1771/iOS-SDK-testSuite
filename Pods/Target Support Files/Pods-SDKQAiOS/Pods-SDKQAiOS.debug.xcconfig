@@ -1,0 +1,16 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YouboraAVPlayerAdapter" "${PODS_CONFIGURATION_BUILD_DIR}/YouboraLib" "${PODS_ROOT}/ComScore/ComScore" "${PODS_ROOT}/GoogleAds-IMA-iOS-SDK" "${PODS_ROOT}/MediastreamPlatformSDKxC" "${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.8.4_static_xcframework" "${PODS_XCFRAMEWORKS_BUILD_DIR}/ComScore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/MediastreamPlatformSDKxC" "${PODS_XCFRAMEWORKS_BUILD_DIR}/google-cast-sdk"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YouboraLib/YouboraLib.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "AVFoundation" -framework "AVKit" -framework "AVRouting" -framework "Accelerate" -framework "AdSupport" -framework "AudioToolbox" -framework "CFNetwork" -framework "ComScore" -framework "CoreData" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreText" -framework "Foundation" -framework "GoogleCast" -framework "GoogleInteractiveMediaAds" -framework "MediaAccessibility" -framework "MediaPlayer" -framework "MediastreamPlatformSDKiOS" -framework "MessageUI" -framework "Network" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "YouboraAVPlayerAdapter" -framework "YouboraLib" -weak_framework "WebKit"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/ComScore" "-F${PODS_CONFIGURATION_BUILD_DIR}/GoogleAds-IMA-iOS-SDK" "-F${PODS_CONFIGURATION_BUILD_DIR}/MediastreamPlatformSDKxC" "-F${PODS_CONFIGURATION_BUILD_DIR}/YouboraAVPlayerAdapter" "-F${PODS_CONFIGURATION_BUILD_DIR}/YouboraLib" "-F${PODS_CONFIGURATION_BUILD_DIR}/google-cast-sdk"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

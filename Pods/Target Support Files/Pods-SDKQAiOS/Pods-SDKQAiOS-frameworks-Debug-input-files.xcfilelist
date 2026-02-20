@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.framework
+${BUILT_PRODUCTS_DIR}/YouboraLib/YouboraLib.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ComScore/ComScore.framework/ComScore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework/GoogleInteractiveMediaAds
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MediastreamPlatformSDKxC/MediastreamPlatformSDKiOS.framework/MediastreamPlatformSDKiOS

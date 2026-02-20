@@ -1,0 +1,1923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2F18BE6E33A356D3FF55C61358764E69 /* google-cast-sdk */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 80E482638F9A187CBDC984E4AB0CAD7E /* Build configuration list for PBXAggregateTarget "google-cast-sdk" */;
+			buildPhases = (
+				3FA3970859354AFA2BCAA5FE66757895 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				B6030338297787BAAC8E1D209355D277 /* PBXTargetDependency */,
+			);
+			name = "google-cast-sdk";
+		};
+		7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3ABA5F09EC43807FFA362AE56AD22924 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */;
+			buildPhases = (
+				34C560B906D648F5E1173388CD967FBB /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "GoogleAds-IMA-iOS-SDK";
+		};
+		7DC6C4E3376815AFA779788BA80B0A56 /* MediastreamPlatformSDKxC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 021ADF7AEBBC9CDA9C63B44280091257 /* Build configuration list for PBXAggregateTarget "MediastreamPlatformSDKxC" */;
+			buildPhases = (
+				3872AB0D29A217E992220853259620D8 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				1FD99860F3B63430BA638D125EB4E57D /* PBXTargetDependency */,
+				03F3F8C09C504D863DDCC600E959633D /* PBXTargetDependency */,
+				5138245ACCFCE133E46CAB1F21BC6EB9 /* PBXTargetDependency */,
+				D53BA3FC599D0614FF054E0C0742CA8C /* PBXTargetDependency */,
+			);
+			name = MediastreamPlatformSDKxC;
+		};
+		945556DAFDFA02EFEDA7464C5F25528D /* ComScore */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 085A8A84906A92B4A497F4407DEA6ABA /* Build configuration list for PBXAggregateTarget "ComScore" */;
+			buildPhases = (
+				4F6978459B4A76214594C4729533269D /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				97CB4BC159F15A7100BC505F15B15767 /* PBXTargetDependency */,
+			);
+			name = ComScore;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00A737C933CB34880AC210296AB27411 /* YouboraLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CA9D35CBAF7D78435173F95B5DAB9B /* YouboraLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00AD4AF231D45297029E81FCD2D022F0 /* YBEventDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = A25FE152B901C49B310C930C35F69579 /* YBEventDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12E4BAB9EDC213C77E3358BBB47CF21F /* YBAVPlayerAdapterSwiftWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1672F6A18BCAB6CEA2C232D3DF4E44 /* YBAVPlayerAdapterSwiftWrapper.m */; };
+		151FE4D71377C4C12849DDEA6970B0F7 /* YBInfinity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B66ACDBCCC021BF225084DCF1C7398E /* YBInfinity.m */; };
+		1A4883B45D4E99EF7137E87A64246988 /* YBAVPlayerAdapterSwiftWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 68922D493FCD1EF4628570CD12C5E211 /* YBAVPlayerAdapterSwiftWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC996425C19C611B0533485CBB2DE38 /* YBConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2F5EAFB2F064BBD2DB15CB864C4300 /* YBConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23E1A3E1D84F32ED8AE7FAB770D2129F /* YBTimestampLastSentTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 4771244E039EA3EC551E6BE09F582D2D /* YBTimestampLastSentTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		288809BABA3A34233991E582A544AD41 /* YBOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C14CA6953358CECCBEACE69225B99 /* YBOptions.m */; };
+		28F0810441E248723E0F800412AA8551 /* YBPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 25AD8343114BD9CF3F8EFFC2A0AB6838 /* YBPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E94F7CBEA05314EE6656EF7E70E1FD0 /* YBResourceTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 618F79D03DBAB3FA910CC57E84965697 /* YBResourceTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EB82CB667A8E0590AED56ED38995B34 /* YBAppDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FA428924FCF92B7BB82A7857E60E26 /* YBAppDatabase.m */; };
+		340A5DD5C79A490204044969B15EC38C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		3677D9602E8DD71B5C2935780B80F787 /* YBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D281A8ED1450C6EBD851D8D5F32D /* YBRequest.m */; };
+		383B0B6D526B92170F8E1BFB196F8132 /* YBHlsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B16E5BC054B434A806A18FB33B786F69 /* YBHlsParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389FF156CC0B42DD10039E910DAB8161 /* YBCdnParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 995D35D3AAC514FDA327DEE590D4E80E /* YBCdnParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39BB0C89143405DCCF18B58773D7771B /* YBOfflineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = B603F4EB05E326E737AB7F8A3C768581 /* YBOfflineTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C8642B6EEFC8CA483CB1B193B42ADEB /* YBTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6612F348195ECFB3E0189F8872929D /* YBTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1EE62F99305CBDA6B725018053A209 /* YBInfinityLocalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA07966721C07DA56B52B58CDE218AE /* YBInfinityLocalManager.m */; };
+		3E7B293233DEE1F0DCC71567178365AA /* YBViewTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF6061EF0051F0276571F63E2E6F877 /* YBViewTransform.m */; };
+		3F72FA03874457D784253205315B8B5D /* YBLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 06FB079794E879292AA6D91FBB4DECEC /* YBLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41AC7D48F84DC611D1848FA572D61EBA /* Pods-SDKQAiOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14885B968475BA87659126A68EEC4504 /* Pods-SDKQAiOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4264F484566302B422F0303BA9557BA7 /* YBPlayerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 951C269F942CD263A02B333F20011B34 /* YBPlayerAdapter.m */; };
+		4331712AC09312037908B02E8CA2EC90 /* YBPlaybackFlags.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E714E8604918F69ADAB7F4FCCAD37E /* YBPlaybackFlags.m */; };
+		473A7FE8CFFCB041B048E91DB086FEAD /* YBParsableResponseHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 707E3B9F1019C2AEFBEC3DD2700209CB /* YBParsableResponseHeader.m */; };
+		47D2D86D2058E66AEEF82E8DA6870366 /* YBDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 267787BF2A6A392B2932953AD4C464FE /* YBDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AD82E6DC694BDB63E15E1043C80AB79 /* YBOfflineTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = D518F5D2B7ECF56DFDC9C3AB4EC06FCE /* YBOfflineTransform.m */; };
+		4C931302AA444740AABD84631CC8B359 /* YBCommunication.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E4559AF4B35BBE40E35B178B94795DB /* YBCommunication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC2DD191DB44AABA6DB3EC582738891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		511244E8DBA9B665C134CDA83858A62A /* YBEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC481EB129CB7D7CE3C5FBAFF65188 /* YBEvent.m */; };
+		553D6EC18601ACD9486C74BD2DF109F2 /* YBInfinity.h in Headers */ = {isa = PBXBuildFile; fileRef = 688C4BD4262F420F512E271017052C94 /* YBInfinity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BE335D936596BA7485033A177CE0D3 /* YBEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA03EAB4F9A2CC7C423B8F39B56EC02 /* YBEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B3140E9FD9273A8C348ADB6DE4BC407 /* YBYouboraUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD18E37D9E38F2B71C85DC531BA3F42 /* YBYouboraUtils.m */; };
+		5DB9C8A6D42B0C8941865F909ED5D428 /* YBConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 04334522F42BDFA55CDF68AF3BB5A707 /* YBConstants.m */; };
+		5F54103C4ACAB9205A61F76A2A883963 /* YBFlowTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 853794602515D7709325EDCFDBC33717 /* YBFlowTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6011C7CA5C49857E32AEC444AB39B6F5 /* YBRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 529DB43BC150ACCCE5524F2C334587D8 /* YBRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64AB67DC1AB9DD77B85EB78FED55147B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		65C25F6FF3B5F13E00F2E204DBA5AADF /* YBTransformSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 23BD30C25981B66CB5CEB43AC18621EE /* YBTransformSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BBD7688C503BBCB93045FA17F0B67BD /* YBTimestampLastSentTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A99D328FB84AD60080E0AAC2D9BF91 /* YBTimestampLastSentTransform.m */; };
+		6D54E02717105593D47874B0F6C390EB /* YBAVPlayerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B37E254B7101376E3F20C57F4867334 /* YBAVPlayerAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F31113ECFC19DE28019466FDBD2C28A /* YBEventDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E8D87F8791962410636C0E8C4F79E1 /* YBEventDataSource.m */; };
+		7304E67D00C32540F2CE534F007EA8C0 /* YBParsableResponseHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC1DF128B5B9C8F61B66A2A9C3D0D2B /* YBParsableResponseHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D77049DB87EE02C99A0DFD4B5B58A8 /* YouboraAVPlayerAdapter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1156E4A838BAC3BA1D0CF6CEB5E382 /* YouboraAVPlayerAdapter-dummy.m */; };
+		7706068DC4F535B9B6BCEA431368BDF8 /* YBPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AADB201271587F81EBB3DC84B89900D8 /* YBPlugin.m */; };
+		7994027C1885210D701A1597826B81A2 /* YBFastDataConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E2526CFAEDD183DF88EC3B16F30278CF /* YBFastDataConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4A9A117B9590B855528839FA4F2C5B /* YBFastDataConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8285D01B650B79FDE38237E7FCE18F /* YBFastDataConfig.m */; };
+		7BAE050A9DC05A89E92B1A116AB9476E /* YouboraAVPlayerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A3D1F65CC3EFA8F4B2E90ACF9E18988 /* YouboraAVPlayerAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81FF6545DDC209D9CD4A4407691E00DD /* YBYouboraUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 408237657C242FD7961108003CDB620B /* YBYouboraUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84417A1DE4159013EED36A6EA89C0FD8 /* YBResourceTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1724E0C43134E4926F676B205BCF788B /* YBResourceTransform.m */; };
+		84D7C0A293E0ABBBA9882D2BC4EE661A /* YBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D14048A360B3579D72EAAB50A4C81CD /* YBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85BF098017EAAC73D91FC7CE31AFD4E3 /* YBDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC9728154DD9FFDCBC150C10995A6B /* YBDeviceInfo.m */; };
+		866512C6662F82BE9DA4D6B40A250A8A /* YBInfinityFlags.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F799BFDD3A19CCEED996F81BFE84B /* YBInfinityFlags.m */; };
+		870D09626E3D1DFE17147AA47DE1975B /* YBPlaybackChronos.h in Headers */ = {isa = PBXBuildFile; fileRef = 98DC1CAEB59BDF1D03B078A36C8BBC38 /* YBPlaybackChronos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879674413FC46F6AF36CE74BE73BCBA2 /* YBPlaybackChronos.m in Sources */ = {isa = PBXBuildFile; fileRef = B31921482F0DC0D46CC5F7CFC6A31570 /* YBPlaybackChronos.m */; };
+		89AEDAF2F2007774DCA1FDE3654D6DB3 /* YBAVPlayerAdapterSwiftTranformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F3FE2FBC075F105A1C0D23B24C14EB /* YBAVPlayerAdapterSwiftTranformer.m */; };
+		8D3F6684305E0A8863495D901A89B265 /* YBInfinityLocalManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F74050B91CD0E70B14B85F5952DC5ABA /* YBInfinityLocalManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD86A91B1C0225FF3B5AABA588A6F96 /* YBTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6821D2898675DD9FC6517E820BAC5671 /* YBTransform.m */; };
+		9EB645DAD645470321FA49EC2F76C59C /* YBPlaybackFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = B616F890BE28C5C0BDDEEC6C68759158 /* YBPlaybackFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDF24E6F527946204806AE3973E5C3E /* YBChrono.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A06616DDC3618A8675D28BEA309AE /* YBChrono.m */; };
+		A292C066C20A20BE50CE9E083E193E5A /* YBEventQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 27319954D60A2CDCF6A03D5370DC8127 /* YBEventQueries.m */; };
+		A75B5A4ACC1B0EF387222277AC38D92C /* YouboraLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02799387866A92A2831310EE6B6A9524 /* YouboraLib-dummy.m */; };
+		AC13F814F78BB37335B95B4C89CF307F /* YBCdnParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F08AFEC9749CBCEBB4BFCAFDE8F0D182 /* YBCdnParser.m */; };
+		B0F0BD3E283D4ED0708313CDFCCA5513 /* YBCdnConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E95215CDB73F9DB3110DC3C11737516D /* YBCdnConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B27266D9C3B8990DFE1731C68E32C9B4 /* YBAppDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF25620DE06A943BC21069DE142CD4D /* YBAppDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40899EF1E356DEFB2ECC836D052374F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 480C90E96FBB5E9B3C53E4473F2BC6D6 /* PrivacyInfo.xcprivacy */; };
+		B76E1E04F9F70B9AD09C633B3B44EC8A /* YBTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 3266747CA7D1FBB30E9265385C5CD17B /* YBTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E85C48826BF2790B8DD0BF1DD6FE4F /* YBAVPlayerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A8BD79ACA7B2653F8848F73C98FAED /* YBAVPlayerAdapter.m */; };
+		BD4AEFD30659F327B0FD1C3B1AB009B2 /* YBOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D63EAE5B783D06B05F3FFF8549DFC9 /* YBOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD8295916DD71E75858987ECCE840A79 /* YBLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CFE2940FF95A67071A31D3F0511B2C /* YBLog.m */; };
+		BD8976FF7B1BF2401F6D6F9971C51251 /* YBRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F7138482D3E85C95FC2EBBC37AFD30 /* YBRequestBuilder.m */; };
+		C39B9C8A437CFE97EF9D225999F05492 /* YBAVPlayerAdapterSwiftTranformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 478A5B80C1FCA9B8CD7E097A17378CB3 /* YBAVPlayerAdapterSwiftTranformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C57BA6CB9D580C4546D531BA5818804E /* YouboraAVPlayerAdapter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB238EEC3A7A7DDA80717FA1F4258C58 /* YouboraAVPlayerAdapter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5C71BE8752BF33F736263DF5BA01081 /* .pod in Resources */ = {isa = PBXBuildFile; fileRef = 4651E2B31C9A82125E14D2D75CDC4329 /* .pod */; };
+		C8C648C2286E052A2EC74E40B0C8DD39 /* YBNqs6Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A70BAC5F2B44DC340697AEC602F6E6 /* YBNqs6Transform.m */; };
+		D2CED64E3AE656420460E1318966EBD8 /* YBPlayheadMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 575AE48242B2B5F99E6CBAE3EC2C8471 /* YBPlayheadMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3975778821FD09B0868390601923769 /* YBChrono.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0627CAF2AC126257883357EFD7BC31 /* YBChrono.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D7CCC57A20DD339E6C6B2233C9F273 /* YBEventDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2280736430C6D827134064C2944DB580 /* YBEventDAO.m */; };
+		D5EB80EE8225E2B148E43110581467D7 /* Pods-SDKQAiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A91FE8CBDC4DCD6EB300EBC4160EEE /* Pods-SDKQAiOS-dummy.m */; };
+		D9EDF1E8FBB74D34AE47892FBBDA1E6F /* YBEventDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C41BC1EC44FE1B2FA3F1A24E796FEA5 /* YBEventDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB4CFB62234062CAE93E3B20D24CE2B1 /* YBViewTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 67248008CD460DD7F1366750039A94F6 /* YBViewTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBBFC7CF488691354A9CFB223E0E4F5E /* YouboraLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD808A24531735C495CB55B065EEFBA /* YouboraLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCBE7E701B37180C1467981CBD71D896 /* YBCdnConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 300BAD2107C85C1AAC25815E59514121 /* YBCdnConfig.m */; };
+		DEE98DF6C4CA2E494967147E4BF6155E /* YBInfinityFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FFF9F634900CC192B0846DE3656A71 /* YBInfinityFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF2CBEF6B89B24598F68573781DB82E9 /* YBNqs6Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E49BE5C06F1EB960ADE1EF5CCE95C08 /* YBNqs6Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2B5E79D872EF8606784805BFE5648B9 /* YBFlowTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = D570894B9F18D5715B2657F0468B5B4A /* YBFlowTransform.m */; };
+		F0E8C70AD6F70B32C502B334E54FD67D /* YBHlsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7CF656E8FC0EA4FEC069AACC15458A /* YBHlsParser.m */; };
+		F28082E9FBE9897C1E7831D8CB1F8A69 /* YBPlayheadMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 666B1933FA5B0EC1625D72138E8135D1 /* YBPlayheadMonitor.m */; };
+		F3B53B5BC88C1A8430D122D9E3D7FF0B /* YBEventQueries.h in Headers */ = {isa = PBXBuildFile; fileRef = A3607A3849B074381ABC10BC020B2F2B /* YBEventQueries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F515B436AAD68535D02EB50410A8A7D1 /* YBPlayerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = DCDF6F82CE0359F8EC4CB742D11EF2AA /* YBPlayerAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F73B8EA1E7965A4606E75C83E54A8D66 /* YBCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F5FC136710031704517FB55DD1F4B0 /* YBCommunication.m */; };
+		F947A46EB6ADCEE103BCCF6CEB62ED68 /* YBTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA30047438B8DBBBA546F4B7FE0B8BB /* YBTimer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		058E9A125BFC1FBE2B78D08737F2504C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F18BE6E33A356D3FF55C61358764E69;
+			remoteInfo = "google-cast-sdk";
+		};
+		0EBACD37B3F17FF5AD940B8C76E29032 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 109DD32F959A563FBB1CDC8008856482;
+			remoteInfo = YouboraLib;
+		};
+		1B188671FCAD073080E026EE1D34186B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC6103043D47A7FD54554DF66EE8ACBE;
+			remoteInfo = "google-cast-sdk-GoogleCast";
+		};
+		23B7FCC6A0FD8D480A6B68493A2C0739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 945556DAFDFA02EFEDA7464C5F25528D;
+			remoteInfo = ComScore;
+		};
+		2C371A6D36A3EA5E4317F4A03113151D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788E88F51165F238C971D4F6B372B4CC;
+			remoteInfo = "ComScore-SCORBundle";
+		};
+		2FEEFD0F1682A602EDBC283EEDCEE788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A281CD38C48E48DD156841D0F4728AB3;
+			remoteInfo = YouboraAVPlayerAdapter;
+		};
+		5C10DAAC03B4D31AAB561DB8C8BC686D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
+		7B69DB7A051DDB9CC744A24BFB080841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7362DAB47E2EFA5452F30DD7E9830B56;
+			remoteInfo = "GoogleAds-IMA-iOS-SDK";
+		};
+		812861F01AF18257E7ED613B722133FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A281CD38C48E48DD156841D0F4728AB3;
+			remoteInfo = YouboraAVPlayerAdapter;
+		};
+		967D72E12A3015F964FFAD14746ECEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 109DD32F959A563FBB1CDC8008856482;
+			remoteInfo = YouboraLib;
+		};
+		9E4806A9808AF6EF6F10E7AC1AAAAD1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DC6C4E3376815AFA779788BA80B0A56;
+			remoteInfo = MediastreamPlatformSDKxC;
+		};
+		DA8F2F8A963C7BACD40AB370B8271A5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 945556DAFDFA02EFEDA7464C5F25528D;
+			remoteInfo = ComScore;
+		};
+		E2C8EE8961E94651C08D278A51CF1CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 109DD32F959A563FBB1CDC8008856482;
+			remoteInfo = YouboraLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FFF9F634900CC192B0846DE3656A71 /* YBInfinityFlags.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBInfinityFlags.h; path = YouboraLib/infinity/YBInfinityFlags.h; sourceTree = "<group>"; };
+		02799387866A92A2831310EE6B6A9524 /* YouboraLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouboraLib-dummy.m"; sourceTree = "<group>"; };
+		04334522F42BDFA55CDF68AF3BB5A707 /* YBConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBConstants.m; path = YouboraLib/YBConstants.m; sourceTree = "<group>"; };
+		04A91FE8CBDC4DCD6EB300EBC4160EEE /* Pods-SDKQAiOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SDKQAiOS-dummy.m"; sourceTree = "<group>"; };
+		06F3FE2FBC075F105A1C0D23B24C14EB /* YBAVPlayerAdapterSwiftTranformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBAVPlayerAdapterSwiftTranformer.m; path = YouboraAVPlayerAdapter/YBAVPlayerAdapterSwiftTranformer.m; sourceTree = "<group>"; };
+		06FB079794E879292AA6D91FBB4DECEC /* YBLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBLog.h; path = YouboraLib/YBLog.h; sourceTree = "<group>"; };
+		090F3296348AF062FD8F1CD3B0D5335A /* YouboraLib */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YouboraLib; path = YouboraLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B66ACDBCCC021BF225084DCF1C7398E /* YBInfinity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBInfinity.m; path = YouboraLib/infinity/YBInfinity.m; sourceTree = "<group>"; };
+		0CEC481EB129CB7D7CE3C5FBAFF65188 /* YBEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBEvent.m; path = YouboraLib/persistence/entity/YBEvent.m; sourceTree = "<group>"; };
+		0D8285D01B650B79FDE38237E7FCE18F /* YBFastDataConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBFastDataConfig.m; path = YouboraLib/transform/YBFastDataConfig.m; sourceTree = "<group>"; };
+		0E1C5AABAB1F3E2A29F7AA1ABF0B34ED /* MediastreamPlatformSDKxC-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MediastreamPlatformSDKxC-xcframeworks.sh"; sourceTree = "<group>"; };
+		0E49BE5C06F1EB960ADE1EF5CCE95C08 /* YBNqs6Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBNqs6Transform.h; path = YouboraLib/transform/YBNqs6Transform.h; sourceTree = "<group>"; };
+		138E40BF5CBE94627A6910C83C031F74 /* Pods-SDKQAiOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKQAiOS-Info.plist"; sourceTree = "<group>"; };
+		13E8D87F8791962410636C0E8C4F79E1 /* YBEventDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBEventDataSource.m; path = YouboraLib/persistence/YBEventDataSource.m; sourceTree = "<group>"; };
+		13FDD25993368544A4E500B589FDB6B9 /* ComScore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ComScore.release.xcconfig; sourceTree = "<group>"; };
+		14885B968475BA87659126A68EEC4504 /* Pods-SDKQAiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SDKQAiOS-umbrella.h"; sourceTree = "<group>"; };
+		15ED624A0A8A2A300A6FD1454C40F562 /* GoogleSansBold.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSansBold.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansBold.bundle"; sourceTree = "<group>"; };
+		1724E0C43134E4926F676B205BCF788B /* YBResourceTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBResourceTransform.m; path = YouboraLib/transform/YBResourceTransform.m; sourceTree = "<group>"; };
+		2280736430C6D827134064C2944DB580 /* YBEventDAO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBEventDAO.m; path = YouboraLib/persistence/dao/YBEventDAO.m; sourceTree = "<group>"; };
+		2336B8C0288E7827DAC58BA9CE8F2B76 /* YouboraAVPlayerAdapter */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YouboraAVPlayerAdapter; path = YouboraAVPlayerAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23BD30C25981B66CB5CEB43AC18621EE /* YBTransformSubclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBTransformSubclass.h; path = YouboraLib/YBTransformSubclass.h; sourceTree = "<group>"; };
+		25AD8343114BD9CF3F8EFFC2A0AB6838 /* YBPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBPlugin.h; path = YouboraLib/plugin/YBPlugin.h; sourceTree = "<group>"; };
+		267787BF2A6A392B2932953AD4C464FE /* YBDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBDeviceInfo.h; path = YouboraLib/YBDeviceInfo.h; sourceTree = "<group>"; };
+		27319954D60A2CDCF6A03D5370DC8127 /* YBEventQueries.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBEventQueries.m; path = YouboraLib/persistence/queries/YBEventQueries.m; sourceTree = "<group>"; };
+		2A3D1F65CC3EFA8F4B2E90ACF9E18988 /* YouboraAVPlayerAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YouboraAVPlayerAdapter.h; path = YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.h; sourceTree = "<group>"; };
+		2C41BC1EC44FE1B2FA3F1A24E796FEA5 /* YBEventDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBEventDataSource.h; path = YouboraLib/persistence/YBEventDataSource.h; sourceTree = "<group>"; };
+		2CD808A24531735C495CB55B065EEFBA /* YouboraLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YouboraLib.h; path = YouboraLib/YouboraLib.h; sourceTree = "<group>"; };
+		300BAD2107C85C1AAC25815E59514121 /* YBCdnConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBCdnConfig.m; path = YouboraLib/transform/resourceparse/cdn/YBCdnConfig.m; sourceTree = "<group>"; };
+		31BC9728154DD9FFDCBC150C10995A6B /* YBDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBDeviceInfo.m; path = YouboraLib/YBDeviceInfo.m; sourceTree = "<group>"; };
+		3266747CA7D1FBB30E9265385C5CD17B /* YBTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBTransform.h; path = YouboraLib/transform/YBTransform.h; sourceTree = "<group>"; };
+		361F233D39D59E2BB426CF5D911D4B9B /* GoogleSansMedium.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSansMedium.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansMedium.bundle"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B0F799BFDD3A19CCEED996F81BFE84B /* YBInfinityFlags.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBInfinityFlags.m; path = YouboraLib/infinity/YBInfinityFlags.m; sourceTree = "<group>"; };
+		3BDD2FFBD71612C67104C0DE19649E2A /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		3C02F9FBDFD33ACFEC03A2211C72607F /* google-cast-sdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "google-cast-sdk-xcframeworks.sh"; sourceTree = "<group>"; };
+		408237657C242FD7961108003CDB620B /* YBYouboraUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBYouboraUtils.h; path = YouboraLib/YBYouboraUtils.h; sourceTree = "<group>"; };
+		43A2536F18F564533DD60BF206805815 /* ComScore-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "ComScore-xcframeworks.sh"; sourceTree = "<group>"; };
+		43A70BAC5F2B44DC340697AEC602F6E6 /* YBNqs6Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBNqs6Transform.m; path = YouboraLib/transform/YBNqs6Transform.m; sourceTree = "<group>"; };
+		45E714E8604918F69ADAB7F4FCCAD37E /* YBPlaybackFlags.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBPlaybackFlags.m; path = YouboraLib/adapter/YBPlaybackFlags.m; sourceTree = "<group>"; };
+		45F5754440C5E6C23B3166E362FBA7D6 /* GoogleCastOptionalUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleCastOptionalUIResources.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastOptionalUIResources.bundle"; sourceTree = "<group>"; };
+		4651E2B31C9A82125E14D2D75CDC4329 /* .pod */ = {isa = PBXFileReference; includeInIndex = 1; path = .pod; sourceTree = "<group>"; };
+		4771244E039EA3EC551E6BE09F582D2D /* YBTimestampLastSentTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBTimestampLastSentTransform.h; path = YouboraLib/transform/infinity/YBTimestampLastSentTransform.h; sourceTree = "<group>"; };
+		478A5B80C1FCA9B8CD7E097A17378CB3 /* YBAVPlayerAdapterSwiftTranformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBAVPlayerAdapterSwiftTranformer.h; path = YouboraAVPlayerAdapter/YBAVPlayerAdapterSwiftTranformer.h; sourceTree = "<group>"; };
+		480C90E96FBB5E9B3C53E4473F2BC6D6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		4898C1F12168B668B59D68FAA723E1D6 /* Pods-SDKQAiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKQAiOS.release.xcconfig"; sourceTree = "<group>"; };
+		489B856BAC0F5EBC3B860E4A4760DB30 /* YouboraLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouboraLib-prefix.pch"; sourceTree = "<group>"; };
+		491BAA3C73B12666B57AC1E8BACC6A68 /* YouboraAVPlayerAdapter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YouboraAVPlayerAdapter.modulemap; sourceTree = "<group>"; };
+		4A748A6DE46379DEFB8962DD68DEED21 /* GoogleCastCoreResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleCastCoreResources.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastCoreResources.bundle"; sourceTree = "<group>"; };
+		4BF25620DE06A943BC21069DE142CD4D /* YBAppDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBAppDatabase.h; path = YouboraLib/persistence/YBAppDatabase.h; sourceTree = "<group>"; };
+		4C0A2FDAFEE79EEA7458F77E4AC12B2E /* YouboraLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouboraLib.release.xcconfig; sourceTree = "<group>"; };
+		4CA03EAB4F9A2CC7C423B8F39B56EC02 /* YBEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBEvent.h; path = YouboraLib/persistence/entity/YBEvent.h; sourceTree = "<group>"; };
+		4D1672F6A18BCAB6CEA2C232D3DF4E44 /* YBAVPlayerAdapterSwiftWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBAVPlayerAdapterSwiftWrapper.m; path = YouboraAVPlayerAdapter/YBAVPlayerAdapterSwiftWrapper.m; sourceTree = "<group>"; };
+		4DA07966721C07DA56B52B58CDE218AE /* YBInfinityLocalManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBInfinityLocalManager.m; path = YouboraLib/persistence/infinity/YBInfinityLocalManager.m; sourceTree = "<group>"; };
+		529DB43BC150ACCCE5524F2C334587D8 /* YBRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBRequestBuilder.h; path = YouboraLib/plugin/YBRequestBuilder.h; sourceTree = "<group>"; };
+		574D8A291A5ED22BC8FB1513AA404A96 /* YouboraAVPlayerAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouboraAVPlayerAdapter.debug.xcconfig; sourceTree = "<group>"; };
+		575AE48242B2B5F99E6CBAE3EC2C8471 /* YBPlayheadMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBPlayheadMonitor.h; path = YouboraLib/adapter/YBPlayheadMonitor.h; sourceTree = "<group>"; };
+		5858C7181BC246B2345DFF6F6209B700 /* ComScore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = ComScore.xcframework; path = ComScore/ComScore.xcframework; sourceTree = "<group>"; };
+		5D14048A360B3579D72EAAB50A4C81CD /* YBRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBRequest.h; path = YouboraLib/comm/YBRequest.h; sourceTree = "<group>"; };
+		5E0627CAF2AC126257883357EFD7BC31 /* YBChrono.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBChrono.h; path = YouboraLib/YBChrono.h; sourceTree = "<group>"; };
+		6034F7F1FFD97CB9EE28270F832B53F5 /* ResourceBundle-GoogleCast-google-cast-sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoogleCast-google-cast-sdk-Info.plist"; sourceTree = "<group>"; };
+		60F7138482D3E85C95FC2EBBC37AFD30 /* YBRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBRequestBuilder.m; path = YouboraLib/plugin/YBRequestBuilder.m; sourceTree = "<group>"; };
+		618F79D03DBAB3FA910CC57E84965697 /* YBResourceTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBResourceTransform.h; path = YouboraLib/transform/YBResourceTransform.h; sourceTree = "<group>"; };
+		62A4F5CA936133B0F99814C3B0591D50 /* ComScore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ComScore.debug.xcconfig; sourceTree = "<group>"; };
+		62B1546DAC9CD61588D775E3FC118A93 /* Pods-SDKQAiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SDKQAiOS.modulemap"; sourceTree = "<group>"; };
+		666B1933FA5B0EC1625D72138E8135D1 /* YBPlayheadMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBPlayheadMonitor.m; path = YouboraLib/adapter/YBPlayheadMonitor.m; sourceTree = "<group>"; };
+		67248008CD460DD7F1366750039A94F6 /* YBViewTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBViewTransform.h; path = YouboraLib/transform/YBViewTransform.h; sourceTree = "<group>"; };
+		6821D2898675DD9FC6517E820BAC5671 /* YBTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBTransform.m; path = YouboraLib/transform/YBTransform.m; sourceTree = "<group>"; };
+		688C4BD4262F420F512E271017052C94 /* YBInfinity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBInfinity.h; path = YouboraLib/infinity/YBInfinity.h; sourceTree = "<group>"; };
+		68922D493FCD1EF4628570CD12C5E211 /* YBAVPlayerAdapterSwiftWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBAVPlayerAdapterSwiftWrapper.h; path = YouboraAVPlayerAdapter/YBAVPlayerAdapterSwiftWrapper.h; sourceTree = "<group>"; };
+		6C6C14CA6953358CECCBEACE69225B99 /* YBOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBOptions.m; path = YouboraLib/plugin/YBOptions.m; sourceTree = "<group>"; };
+		6E4559AF4B35BBE40E35B178B94795DB /* YBCommunication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBCommunication.h; path = YouboraLib/comm/YBCommunication.h; sourceTree = "<group>"; };
+		707E3B9F1019C2AEFBEC3DD2700209CB /* YBParsableResponseHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBParsableResponseHeader.m; path = YouboraLib/transform/resourceparse/cdn/YBParsableResponseHeader.m; sourceTree = "<group>"; };
+		74975BFF4851504C5D833992A1719FE7 /* Pods-SDKQAiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SDKQAiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		74E6A64D736A0347E8D16DDD1FA207B0 /* Pods-SDKQAiOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SDKQAiOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C34D281A8ED1450C6EBD851D8D5F32D /* YBRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBRequest.m; path = YouboraLib/comm/YBRequest.m; sourceTree = "<group>"; };
+		82FA428924FCF92B7BB82A7857E60E26 /* YBAppDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBAppDatabase.m; path = YouboraLib/persistence/YBAppDatabase.m; sourceTree = "<group>"; };
+		853794602515D7709325EDCFDBC33717 /* YBFlowTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBFlowTransform.h; path = YouboraLib/transform/YBFlowTransform.h; sourceTree = "<group>"; };
+		8B37E254B7101376E3F20C57F4867334 /* YBAVPlayerAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBAVPlayerAdapter.h; path = YouboraAVPlayerAdapter/adapter/YBAVPlayerAdapter.h; sourceTree = "<group>"; };
+		8B7F57AC044E4EE8554C2DC96F0051B6 /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GoogleAds-IMA-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		8CFA1E349E023303154DD9186293952A /* ResourceBundle-SCORBundle-ComScore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SCORBundle-ComScore-Info.plist"; sourceTree = "<group>"; };
+		8E3A06616DDC3618A8675D28BEA309AE /* YBChrono.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBChrono.m; path = YouboraLib/YBChrono.m; sourceTree = "<group>"; };
+		902412781F88AC38B83FA1EFFFB95FAE /* Pods-SDKQAiOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKQAiOS-frameworks.sh"; sourceTree = "<group>"; };
+		91F99451D0FEAEC57B519CA334AADC87 /* GoogleSansRegular.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSansRegular.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleSansRegular.bundle"; sourceTree = "<group>"; };
+		951C269F942CD263A02B333F20011B34 /* YBPlayerAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBPlayerAdapter.m; path = YouboraLib/adapter/YBPlayerAdapter.m; sourceTree = "<group>"; };
+		98DC1CAEB59BDF1D03B078A36C8BBC38 /* YBPlaybackChronos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBPlaybackChronos.h; path = YouboraLib/adapter/YBPlaybackChronos.h; sourceTree = "<group>"; };
+		995D35D3AAC514FDA327DEE590D4E80E /* YBCdnParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBCdnParser.h; path = YouboraLib/transform/resourceparse/YBCdnParser.h; sourceTree = "<group>"; };
+		9B9EE23E6FB39682BD4C46B711D757CD /* google-cast-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "google-cast-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6612F348195ECFB3E0189F8872929D /* YBTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBTimer.h; path = YouboraLib/YBTimer.h; sourceTree = "<group>"; };
+		A25FE152B901C49B310C930C35F69579 /* YBEventDAO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBEventDAO.h; path = YouboraLib/persistence/dao/YBEventDAO.h; sourceTree = "<group>"; };
+		A3607A3849B074381ABC10BC020B2F2B /* YBEventQueries.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBEventQueries.h; path = YouboraLib/persistence/queries/YBEventQueries.h; sourceTree = "<group>"; };
+		A537A92B0434192C4BA8D585348D66CB /* google-cast-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "google-cast-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		AADB201271587F81EBB3DC84B89900D8 /* YBPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBPlugin.m; path = YouboraLib/plugin/YBPlugin.m; sourceTree = "<group>"; };
+		AB20DB5DC38A6EEC34CD5BD97B84C6C4 /* MediastreamPlatformSDKxC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MediastreamPlatformSDKxC.release.xcconfig; sourceTree = "<group>"; };
+		ABA30047438B8DBBBA546F4B7FE0B8BB /* YBTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBTimer.m; path = YouboraLib/YBTimer.m; sourceTree = "<group>"; };
+		B16E5BC054B434A806A18FB33B786F69 /* YBHlsParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBHlsParser.h; path = YouboraLib/transform/resourceparse/YBHlsParser.h; sourceTree = "<group>"; };
+		B1A8BD79ACA7B2653F8848F73C98FAED /* YBAVPlayerAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBAVPlayerAdapter.m; path = YouboraAVPlayerAdapter/adapter/YBAVPlayerAdapter.m; sourceTree = "<group>"; };
+		B31921482F0DC0D46CC5F7CFC6A31570 /* YBPlaybackChronos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBPlaybackChronos.m; path = YouboraLib/adapter/YBPlaybackChronos.m; sourceTree = "<group>"; };
+		B603F4EB05E326E737AB7F8A3C768581 /* YBOfflineTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBOfflineTransform.h; path = YouboraLib/transform/YBOfflineTransform.h; sourceTree = "<group>"; };
+		B616F890BE28C5C0BDDEEC6C68759158 /* YBPlaybackFlags.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBPlaybackFlags.h; path = YouboraLib/adapter/YBPlaybackFlags.h; sourceTree = "<group>"; };
+		B75F76BD5DA3594AC326D6F7ED77FD96 /* ComScore-SCORBundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ComScore-SCORBundle"; path = SCORBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3A3E3B0CCBC589417663445EC4B193 /* YouboraLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YouboraLib.modulemap; sourceTree = "<group>"; };
+		BCD18E37D9E38F2B71C85DC531BA3F42 /* YBYouboraUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBYouboraUtils.m; path = YouboraLib/YBYouboraUtils.m; sourceTree = "<group>"; };
+		BD7DDE58D7A32422DF367A7B08676130 /* GoogleCastUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleCastUIResources.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastUIResources.bundle"; sourceTree = "<group>"; };
+		BF5DA201BB4750580A33D3596F1BC6BF /* YouboraLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouboraLib.debug.xcconfig; sourceTree = "<group>"; };
+		BFF6061EF0051F0276571F63E2E6F877 /* YBViewTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBViewTransform.m; path = YouboraLib/transform/YBViewTransform.m; sourceTree = "<group>"; };
+		C076166DB618F897084583673935924C /* Pods-SDKQAiOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SDKQAiOS"; path = Pods_SDKQAiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12C450C8A49AD80E381A20A6DD7D02B /* GoogleInteractiveMediaAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleInteractiveMediaAds.xcframework; sourceTree = "<group>"; };
+		C33F66EC46AABEAFCF6127A99D24254C /* MediastreamPlatformSDKxC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MediastreamPlatformSDKxC.debug.xcconfig; sourceTree = "<group>"; };
+		C49DC01CA07A8F47C4CEE7F8AD3F9F59 /* YouboraAVPlayerAdapter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YouboraAVPlayerAdapter-Info.plist"; sourceTree = "<group>"; };
+		C585E5499AB32AC4EB312B95552FAE51 /* google-cast-sdk-GoogleCast */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "google-cast-sdk-GoogleCast"; path = GoogleCast.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FBF30FCA6CE4E5990642F3EE8769C0 /* YouboraLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YouboraLib-Info.plist"; sourceTree = "<group>"; };
+		C9CA9D35CBAF7D78435173F95B5DAB9B /* YouboraLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouboraLib-umbrella.h"; sourceTree = "<group>"; };
+		CA7190B6DD11CA9C5D303D4FEC8448FC /* YouboraAVPlayerAdapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouboraAVPlayerAdapter.release.xcconfig; sourceTree = "<group>"; };
+		CA7CF656E8FC0EA4FEC069AACC15458A /* YBHlsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBHlsParser.m; path = YouboraLib/transform/resourceparse/YBHlsParser.m; sourceTree = "<group>"; };
+		CBC1DF128B5B9C8F61B66A2A9C3D0D2B /* YBParsableResponseHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBParsableResponseHeader.h; path = YouboraLib/transform/resourceparse/cdn/YBParsableResponseHeader.h; sourceTree = "<group>"; };
+		CC6A97AB49E3DC525AADAB2C7DE49EEF /* Pods-SDKQAiOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SDKQAiOS-resources.sh"; sourceTree = "<group>"; };
+		CD2F5EAFB2F064BBD2DB15CB864C4300 /* YBConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBConstants.h; path = YouboraLib/YBConstants.h; sourceTree = "<group>"; };
+		CE6F40F7F5B8A0B630FB65CA561CC49F /* YouboraAVPlayerAdapter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouboraAVPlayerAdapter-prefix.pch"; sourceTree = "<group>"; };
+		D46705A88F7EEB7D97D08E0AE99D4BC9 /* GoogleCast.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GoogleCast.xcframework; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework"; sourceTree = "<group>"; };
+		D518F5D2B7ECF56DFDC9C3AB4EC06FCE /* YBOfflineTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBOfflineTransform.m; path = YouboraLib/transform/YBOfflineTransform.m; sourceTree = "<group>"; };
+		D570894B9F18D5715B2657F0468B5B4A /* YBFlowTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBFlowTransform.m; path = YouboraLib/transform/YBFlowTransform.m; sourceTree = "<group>"; };
+		D6B821975CA2791FF624A9DC42721FF6 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleAds-IMA-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		D7CFE2940FF95A67071A31D3F0511B2C /* YBLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBLog.m; path = YouboraLib/YBLog.m; sourceTree = "<group>"; };
+		D993F30B693FF5C737761907C5BFF256 /* MaterialDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialDialogs.bundle; path = "GoogleCastSDK-ios-4.8.4_static_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/MaterialDialogs.bundle"; sourceTree = "<group>"; };
+		DB238EEC3A7A7DDA80717FA1F4258C58 /* YouboraAVPlayerAdapter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouboraAVPlayerAdapter-umbrella.h"; sourceTree = "<group>"; };
+		DCDF6F82CE0359F8EC4CB742D11EF2AA /* YBPlayerAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBPlayerAdapter.h; path = YouboraLib/adapter/YBPlayerAdapter.h; sourceTree = "<group>"; };
+		DCF4BAC601E0D2F7992ED2474E1A1E71 /* Pods-SDKQAiOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SDKQAiOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2526CFAEDD183DF88EC3B16F30278CF /* YBFastDataConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBFastDataConfig.h; path = YouboraLib/transform/YBFastDataConfig.h; sourceTree = "<group>"; };
+		E7D63EAE5B783D06B05F3FFF8549DFC9 /* YBOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBOptions.h; path = YouboraLib/plugin/YBOptions.h; sourceTree = "<group>"; };
+		E89E8C45496D64A285A1C2FB8320AA89 /* MediastreamPlatformSDKiOS.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MediastreamPlatformSDKiOS.xcframework; sourceTree = "<group>"; };
+		E95215CDB73F9DB3110DC3C11737516D /* YBCdnConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBCdnConfig.h; path = YouboraLib/transform/resourceparse/cdn/YBCdnConfig.h; sourceTree = "<group>"; };
+		E9F5FC136710031704517FB55DD1F4B0 /* YBCommunication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBCommunication.m; path = YouboraLib/comm/YBCommunication.m; sourceTree = "<group>"; };
+		EA1156E4A838BAC3BA1D0CF6CEB5E382 /* YouboraAVPlayerAdapter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouboraAVPlayerAdapter-dummy.m"; sourceTree = "<group>"; };
+		F08AFEC9749CBCEBB4BFCAFDE8F0D182 /* YBCdnParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBCdnParser.m; path = YouboraLib/transform/resourceparse/YBCdnParser.m; sourceTree = "<group>"; };
+		F0A99D328FB84AD60080E0AAC2D9BF91 /* YBTimestampLastSentTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YBTimestampLastSentTransform.m; path = YouboraLib/transform/infinity/YBTimestampLastSentTransform.m; sourceTree = "<group>"; };
+		F74050B91CD0E70B14B85F5952DC5ABA /* YBInfinityLocalManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YBInfinityLocalManager.h; path = YouboraLib/persistence/infinity/YBInfinityLocalManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A8B14E94116B30B51B0EE1D42F86265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B829597EE5A4B45609CAD2F7DF721E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51C4AF88797FBE4906BDB9CF52016C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340A5DD5C79A490204044969B15EC38C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DACAA0D8893DA1CEF630B6361F18AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC2DD191DB44AABA6DB3EC582738891 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCD06409A3A7BDD229A4B5639F27336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AB67DC1AB9DD77B85EB78FED55147B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06226178AD49A7D22160BC7F79DC8B30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC3A3E3B0CCBC589417663445EC4B193 /* YouboraLib.modulemap */,
+				02799387866A92A2831310EE6B6A9524 /* YouboraLib-dummy.m */,
+				C6FBF30FCA6CE4E5990642F3EE8769C0 /* YouboraLib-Info.plist */,
+				489B856BAC0F5EBC3B860E4A4760DB30 /* YouboraLib-prefix.pch */,
+				C9CA9D35CBAF7D78435173F95B5DAB9B /* YouboraLib-umbrella.h */,
+				BF5DA201BB4750580A33D3596F1BC6BF /* YouboraLib.debug.xcconfig */,
+				4C0A2FDAFEE79EEA7458F77E4AC12B2E /* YouboraLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YouboraLib";
+			sourceTree = "<group>";
+		};
+		2060196D2C5356187D46954FB92878CE /* YouboraLib */ = {
+			isa = PBXGroup;
+			children = (
+				4BF25620DE06A943BC21069DE142CD4D /* YBAppDatabase.h */,
+				82FA428924FCF92B7BB82A7857E60E26 /* YBAppDatabase.m */,
+				E95215CDB73F9DB3110DC3C11737516D /* YBCdnConfig.h */,
+				300BAD2107C85C1AAC25815E59514121 /* YBCdnConfig.m */,
+				995D35D3AAC514FDA327DEE590D4E80E /* YBCdnParser.h */,
+				F08AFEC9749CBCEBB4BFCAFDE8F0D182 /* YBCdnParser.m */,
+				5E0627CAF2AC126257883357EFD7BC31 /* YBChrono.h */,
+				8E3A06616DDC3618A8675D28BEA309AE /* YBChrono.m */,
+				6E4559AF4B35BBE40E35B178B94795DB /* YBCommunication.h */,
+				E9F5FC136710031704517FB55DD1F4B0 /* YBCommunication.m */,
+				CD2F5EAFB2F064BBD2DB15CB864C4300 /* YBConstants.h */,
+				04334522F42BDFA55CDF68AF3BB5A707 /* YBConstants.m */,
+				267787BF2A6A392B2932953AD4C464FE /* YBDeviceInfo.h */,
+				31BC9728154DD9FFDCBC150C10995A6B /* YBDeviceInfo.m */,
+				4CA03EAB4F9A2CC7C423B8F39B56EC02 /* YBEvent.h */,
+				0CEC481EB129CB7D7CE3C5FBAFF65188 /* YBEvent.m */,
+				A25FE152B901C49B310C930C35F69579 /* YBEventDAO.h */,
+				2280736430C6D827134064C2944DB580 /* YBEventDAO.m */,
+				2C41BC1EC44FE1B2FA3F1A24E796FEA5 /* YBEventDataSource.h */,
+				13E8D87F8791962410636C0E8C4F79E1 /* YBEventDataSource.m */,
+				A3607A3849B074381ABC10BC020B2F2B /* YBEventQueries.h */,
+				27319954D60A2CDCF6A03D5370DC8127 /* YBEventQueries.m */,
+				E2526CFAEDD183DF88EC3B16F30278CF /* YBFastDataConfig.h */,
+				0D8285D01B650B79FDE38237E7FCE18F /* YBFastDataConfig.m */,
+				853794602515D7709325EDCFDBC33717 /* YBFlowTransform.h */,
+				D570894B9F18D5715B2657F0468B5B4A /* YBFlowTransform.m */,
+				B16E5BC054B434A806A18FB33B786F69 /* YBHlsParser.h */,
+				CA7CF656E8FC0EA4FEC069AACC15458A /* YBHlsParser.m */,
+				688C4BD4262F420F512E271017052C94 /* YBInfinity.h */,
+				0B66ACDBCCC021BF225084DCF1C7398E /* YBInfinity.m */,
+				01FFF9F634900CC192B0846DE3656A71 /* YBInfinityFlags.h */,
+				3B0F799BFDD3A19CCEED996F81BFE84B /* YBInfinityFlags.m */,
+				F74050B91CD0E70B14B85F5952DC5ABA /* YBInfinityLocalManager.h */,
+				4DA07966721C07DA56B52B58CDE218AE /* YBInfinityLocalManager.m */,
+				06FB079794E879292AA6D91FBB4DECEC /* YBLog.h */,
+				D7CFE2940FF95A67071A31D3F0511B2C /* YBLog.m */,
+				0E49BE5C06F1EB960ADE1EF5CCE95C08 /* YBNqs6Transform.h */,
+				43A70BAC5F2B44DC340697AEC602F6E6 /* YBNqs6Transform.m */,
+				B603F4EB05E326E737AB7F8A3C768581 /* YBOfflineTransform.h */,
+				D518F5D2B7ECF56DFDC9C3AB4EC06FCE /* YBOfflineTransform.m */,
+				E7D63EAE5B783D06B05F3FFF8549DFC9 /* YBOptions.h */,
+				6C6C14CA6953358CECCBEACE69225B99 /* YBOptions.m */,
+				CBC1DF128B5B9C8F61B66A2A9C3D0D2B /* YBParsableResponseHeader.h */,
+				707E3B9F1019C2AEFBEC3DD2700209CB /* YBParsableResponseHeader.m */,
+				98DC1CAEB59BDF1D03B078A36C8BBC38 /* YBPlaybackChronos.h */,
+				B31921482F0DC0D46CC5F7CFC6A31570 /* YBPlaybackChronos.m */,
+				B616F890BE28C5C0BDDEEC6C68759158 /* YBPlaybackFlags.h */,
+				45E714E8604918F69ADAB7F4FCCAD37E /* YBPlaybackFlags.m */,
+				DCDF6F82CE0359F8EC4CB742D11EF2AA /* YBPlayerAdapter.h */,
+				951C269F942CD263A02B333F20011B34 /* YBPlayerAdapter.m */,
+				575AE48242B2B5F99E6CBAE3EC2C8471 /* YBPlayheadMonitor.h */,
+				666B1933FA5B0EC1625D72138E8135D1 /* YBPlayheadMonitor.m */,
+				25AD8343114BD9CF3F8EFFC2A0AB6838 /* YBPlugin.h */,
+				AADB201271587F81EBB3DC84B89900D8 /* YBPlugin.m */,
+				5D14048A360B3579D72EAAB50A4C81CD /* YBRequest.h */,
+				7C34D281A8ED1450C6EBD851D8D5F32D /* YBRequest.m */,
+				529DB43BC150ACCCE5524F2C334587D8 /* YBRequestBuilder.h */,
+				60F7138482D3E85C95FC2EBBC37AFD30 /* YBRequestBuilder.m */,
+				618F79D03DBAB3FA910CC57E84965697 /* YBResourceTransform.h */,
+				1724E0C43134E4926F676B205BCF788B /* YBResourceTransform.m */,
+				9E6612F348195ECFB3E0189F8872929D /* YBTimer.h */,
+				ABA30047438B8DBBBA546F4B7FE0B8BB /* YBTimer.m */,
+				4771244E039EA3EC551E6BE09F582D2D /* YBTimestampLastSentTransform.h */,
+				F0A99D328FB84AD60080E0AAC2D9BF91 /* YBTimestampLastSentTransform.m */,
+				3266747CA7D1FBB30E9265385C5CD17B /* YBTransform.h */,
+				6821D2898675DD9FC6517E820BAC5671 /* YBTransform.m */,
+				23BD30C25981B66CB5CEB43AC18621EE /* YBTransformSubclass.h */,
+				67248008CD460DD7F1366750039A94F6 /* YBViewTransform.h */,
+				BFF6061EF0051F0276571F63E2E6F877 /* YBViewTransform.m */,
+				408237657C242FD7961108003CDB620B /* YBYouboraUtils.h */,
+				BCD18E37D9E38F2B71C85DC531BA3F42 /* YBYouboraUtils.m */,
+				2CD808A24531735C495CB55B065EEFBA /* YouboraLib.h */,
+				06226178AD49A7D22160BC7F79DC8B30 /* Support Files */,
+			);
+			name = YouboraLib;
+			path = YouboraLib;
+			sourceTree = "<group>";
+		};
+		2102AF13F5EA153AC111AE823F0CC282 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				491BAA3C73B12666B57AC1E8BACC6A68 /* YouboraAVPlayerAdapter.modulemap */,
+				EA1156E4A838BAC3BA1D0CF6CEB5E382 /* YouboraAVPlayerAdapter-dummy.m */,
+				C49DC01CA07A8F47C4CEE7F8AD3F9F59 /* YouboraAVPlayerAdapter-Info.plist */,
+				CE6F40F7F5B8A0B630FB65CA561CC49F /* YouboraAVPlayerAdapter-prefix.pch */,
+				DB238EEC3A7A7DDA80717FA1F4258C58 /* YouboraAVPlayerAdapter-umbrella.h */,
+				574D8A291A5ED22BC8FB1513AA404A96 /* YouboraAVPlayerAdapter.debug.xcconfig */,
+				CA7190B6DD11CA9C5D303D4FEC8448FC /* YouboraAVPlayerAdapter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YouboraAVPlayerAdapter";
+			sourceTree = "<group>";
+		};
+		2DED4C524C81D343D6D08C1CA34C6494 /* GoogleAds-IMA-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3F2DA67878A30FD24161D145BE1E300E /* Frameworks */,
+				EBBF3A8B0487737F46B12FF6164644CA /* Support Files */,
+			);
+			name = "GoogleAds-IMA-iOS-SDK";
+			path = "GoogleAds-IMA-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		353BD592334E4C8F59E536A94EE9BE0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89E8C45496D64A285A1C2FB8320AA89 /* MediastreamPlatformSDKiOS.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D54A725A9E84EBBCED6BE28B9BB4C4C /* ComScore */ = {
+			isa = PBXGroup;
+			children = (
+				C390E3C67BF30EA9A015AC18BDEE034A /* Frameworks */,
+				A55C6EDBB82D0E56B0EF02338611FEEB /* Resources */,
+				DA6D10C766C94FE31D2511C6AACF9D14 /* Support Files */,
+			);
+			name = ComScore;
+			path = ComScore;
+			sourceTree = "<group>";
+		};
+		3F2DA67878A30FD24161D145BE1E300E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C12C450C8A49AD80E381A20A6DD7D02B /* GoogleInteractiveMediaAds.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41F9889A76903FDC519A16F136D63D97 /* MediastreamPlatformSDKxC */ = {
+			isa = PBXGroup;
+			children = (
+				353BD592334E4C8F59E536A94EE9BE0F /* Frameworks */,
+				A5A1CB05F10185CDD3C2D3268AD10439 /* Support Files */,
+			);
+			name = MediastreamPlatformSDKxC;
+			path = MediastreamPlatformSDKxC;
+			sourceTree = "<group>";
+		};
+		43C8EF885453C9FAED7F4A97AC351C3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A748A6DE46379DEFB8962DD68DEED21 /* GoogleCastCoreResources.bundle */,
+				45F5754440C5E6C23B3166E362FBA7D6 /* GoogleCastOptionalUIResources.bundle */,
+				BD7DDE58D7A32422DF367A7B08676130 /* GoogleCastUIResources.bundle */,
+				15ED624A0A8A2A300A6FD1454C40F562 /* GoogleSansBold.bundle */,
+				361F233D39D59E2BB426CF5D911D4B9B /* GoogleSansMedium.bundle */,
+				91F99451D0FEAEC57B519CA334AADC87 /* GoogleSansRegular.bundle */,
+				D993F30B693FF5C737761907C5BFF256 /* MaterialDialogs.bundle */,
+				480C90E96FBB5E9B3C53E4473F2BC6D6 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5AEF6D462E2B840BBE8FEFF594C871EB /* google-cast-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				954E56FDD6DDD4613B5E85E67C159ECB /* Frameworks */,
+				43C8EF885453C9FAED7F4A97AC351C3C /* Resources */,
+				9BE67374783945A793C15438D09C7282 /* Support Files */,
+			);
+			name = "google-cast-sdk";
+			path = "google-cast-sdk";
+			sourceTree = "<group>";
+		};
+		954E56FDD6DDD4613B5E85E67C159ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D46705A88F7EEB7D97D08E0AE99D4BC9 /* GoogleCast.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BE67374783945A793C15438D09C7282 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C02F9FBDFD33ACFEC03A2211C72607F /* google-cast-sdk-xcframeworks.sh */,
+				9B9EE23E6FB39682BD4C46B711D757CD /* google-cast-sdk.debug.xcconfig */,
+				A537A92B0434192C4BA8D585348D66CB /* google-cast-sdk.release.xcconfig */,
+				6034F7F1FFD97CB9EE28270F832B53F5 /* ResourceBundle-GoogleCast-google-cast-sdk-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/google-cast-sdk";
+			sourceTree = "<group>";
+		};
+		A55C6EDBB82D0E56B0EF02338611FEEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4651E2B31C9A82125E14D2D75CDC4329 /* .pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A5A1CB05F10185CDD3C2D3268AD10439 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E1C5AABAB1F3E2A29F7AA1ABF0B34ED /* MediastreamPlatformSDKxC-xcframeworks.sh */,
+				C33F66EC46AABEAFCF6127A99D24254C /* MediastreamPlatformSDKxC.debug.xcconfig */,
+				AB20DB5DC38A6EEC34CD5BD97B84C6C4 /* MediastreamPlatformSDKxC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MediastreamPlatformSDKxC";
+			sourceTree = "<group>";
+		};
+		BA2F6BEB1665C1BFC87A9768D09A275B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B75F76BD5DA3594AC326D6F7ED77FD96 /* ComScore-SCORBundle */,
+				C585E5499AB32AC4EB312B95552FAE51 /* google-cast-sdk-GoogleCast */,
+				C076166DB618F897084583673935924C /* Pods-SDKQAiOS */,
+				2336B8C0288E7827DAC58BA9CE8F2B76 /* YouboraAVPlayerAdapter */,
+				090F3296348AF062FD8F1CD3B0D5335A /* YouboraLib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDBE9B291B0F1908EF5908F1A1A39C30 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F600CC54208609EC776793000DF840D6 /* Pods-SDKQAiOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C390E3C67BF30EA9A015AC18BDEE034A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5858C7181BC246B2345DFF6F6209B700 /* ComScore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA9A97BBF98FD147969DDB29CC107E31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D54A725A9E84EBBCED6BE28B9BB4C4C /* ComScore */,
+				5AEF6D462E2B840BBE8FEFF594C871EB /* google-cast-sdk */,
+				2DED4C524C81D343D6D08C1CA34C6494 /* GoogleAds-IMA-iOS-SDK */,
+				41F9889A76903FDC519A16F136D63D97 /* MediastreamPlatformSDKxC */,
+				D465596F6922B3C0DE14E22E500BA0FD /* YouboraAVPlayerAdapter */,
+				2060196D2C5356187D46954FB92878CE /* YouboraLib */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CA9A97BBF98FD147969DDB29CC107E31 /* Pods */,
+				BA2F6BEB1665C1BFC87A9768D09A275B /* Products */,
+				BDBE9B291B0F1908EF5908F1A1A39C30 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D465596F6922B3C0DE14E22E500BA0FD /* YouboraAVPlayerAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				8B37E254B7101376E3F20C57F4867334 /* YBAVPlayerAdapter.h */,
+				B1A8BD79ACA7B2653F8848F73C98FAED /* YBAVPlayerAdapter.m */,
+				478A5B80C1FCA9B8CD7E097A17378CB3 /* YBAVPlayerAdapterSwiftTranformer.h */,
+				06F3FE2FBC075F105A1C0D23B24C14EB /* YBAVPlayerAdapterSwiftTranformer.m */,
+				68922D493FCD1EF4628570CD12C5E211 /* YBAVPlayerAdapterSwiftWrapper.h */,
+				4D1672F6A18BCAB6CEA2C232D3DF4E44 /* YBAVPlayerAdapterSwiftWrapper.m */,
+				2A3D1F65CC3EFA8F4B2E90ACF9E18988 /* YouboraAVPlayerAdapter.h */,
+				2102AF13F5EA153AC111AE823F0CC282 /* Support Files */,
+			);
+			name = YouboraAVPlayerAdapter;
+			path = YouboraAVPlayerAdapter;
+			sourceTree = "<group>";
+		};
+		DA6D10C766C94FE31D2511C6AACF9D14 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A2536F18F564533DD60BF206805815 /* ComScore-xcframeworks.sh */,
+				62A4F5CA936133B0F99814C3B0591D50 /* ComScore.debug.xcconfig */,
+				13FDD25993368544A4E500B589FDB6B9 /* ComScore.release.xcconfig */,
+				8CFA1E349E023303154DD9186293952A /* ResourceBundle-SCORBundle-ComScore-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ComScore";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EBBF3A8B0487737F46B12FF6164644CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B7F57AC044E4EE8554C2DC96F0051B6 /* GoogleAds-IMA-iOS-SDK-xcframeworks.sh */,
+				3BDD2FFBD71612C67104C0DE19649E2A /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */,
+				D6B821975CA2791FF624A9DC42721FF6 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleAds-IMA-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		F600CC54208609EC776793000DF840D6 /* Pods-SDKQAiOS */ = {
+			isa = PBXGroup;
+			children = (
+				62B1546DAC9CD61588D775E3FC118A93 /* Pods-SDKQAiOS.modulemap */,
+				74E6A64D736A0347E8D16DDD1FA207B0 /* Pods-SDKQAiOS-acknowledgements.markdown */,
+				DCF4BAC601E0D2F7992ED2474E1A1E71 /* Pods-SDKQAiOS-acknowledgements.plist */,
+				04A91FE8CBDC4DCD6EB300EBC4160EEE /* Pods-SDKQAiOS-dummy.m */,
+				902412781F88AC38B83FA1EFFFB95FAE /* Pods-SDKQAiOS-frameworks.sh */,
+				138E40BF5CBE94627A6910C83C031F74 /* Pods-SDKQAiOS-Info.plist */,
+				CC6A97AB49E3DC525AADAB2C7DE49EEF /* Pods-SDKQAiOS-resources.sh */,
+				14885B968475BA87659126A68EEC4504 /* Pods-SDKQAiOS-umbrella.h */,
+				74975BFF4851504C5D833992A1719FE7 /* Pods-SDKQAiOS.debug.xcconfig */,
+				4898C1F12168B668B59D68FAA723E1D6 /* Pods-SDKQAiOS.release.xcconfig */,
+			);
+			name = "Pods-SDKQAiOS";
+			path = "Target Support Files/Pods-SDKQAiOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		109219362D83FA78C93A359048C032FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AC7D48F84DC611D1848FA572D61EBA /* Pods-SDKQAiOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E29B52DF79CCA0138E284CC36B8C92F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D54E02717105593D47874B0F6C390EB /* YBAVPlayerAdapter.h in Headers */,
+				C39B9C8A437CFE97EF9D225999F05492 /* YBAVPlayerAdapterSwiftTranformer.h in Headers */,
+				1A4883B45D4E99EF7137E87A64246988 /* YBAVPlayerAdapterSwiftWrapper.h in Headers */,
+				7BAE050A9DC05A89E92B1A116AB9476E /* YouboraAVPlayerAdapter.h in Headers */,
+				C57BA6CB9D580C4546D531BA5818804E /* YouboraAVPlayerAdapter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C7A07DCDBADD0FA7B0E5B30116731 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B27266D9C3B8990DFE1731C68E32C9B4 /* YBAppDatabase.h in Headers */,
+				B0F0BD3E283D4ED0708313CDFCCA5513 /* YBCdnConfig.h in Headers */,
+				389FF156CC0B42DD10039E910DAB8161 /* YBCdnParser.h in Headers */,
+				D3975778821FD09B0868390601923769 /* YBChrono.h in Headers */,
+				4C931302AA444740AABD84631CC8B359 /* YBCommunication.h in Headers */,
+				1AC996425C19C611B0533485CBB2DE38 /* YBConstants.h in Headers */,
+				47D2D86D2058E66AEEF82E8DA6870366 /* YBDeviceInfo.h in Headers */,
+				58BE335D936596BA7485033A177CE0D3 /* YBEvent.h in Headers */,
+				00AD4AF231D45297029E81FCD2D022F0 /* YBEventDAO.h in Headers */,
+				D9EDF1E8FBB74D34AE47892FBBDA1E6F /* YBEventDataSource.h in Headers */,
+				F3B53B5BC88C1A8430D122D9E3D7FF0B /* YBEventQueries.h in Headers */,
+				7994027C1885210D701A1597826B81A2 /* YBFastDataConfig.h in Headers */,
+				5F54103C4ACAB9205A61F76A2A883963 /* YBFlowTransform.h in Headers */,
+				383B0B6D526B92170F8E1BFB196F8132 /* YBHlsParser.h in Headers */,
+				553D6EC18601ACD9486C74BD2DF109F2 /* YBInfinity.h in Headers */,
+				DEE98DF6C4CA2E494967147E4BF6155E /* YBInfinityFlags.h in Headers */,
+				8D3F6684305E0A8863495D901A89B265 /* YBInfinityLocalManager.h in Headers */,
+				3F72FA03874457D784253205315B8B5D /* YBLog.h in Headers */,
+				DF2CBEF6B89B24598F68573781DB82E9 /* YBNqs6Transform.h in Headers */,
+				39BB0C89143405DCCF18B58773D7771B /* YBOfflineTransform.h in Headers */,
+				BD4AEFD30659F327B0FD1C3B1AB009B2 /* YBOptions.h in Headers */,
+				7304E67D00C32540F2CE534F007EA8C0 /* YBParsableResponseHeader.h in Headers */,
+				870D09626E3D1DFE17147AA47DE1975B /* YBPlaybackChronos.h in Headers */,
+				9EB645DAD645470321FA49EC2F76C59C /* YBPlaybackFlags.h in Headers */,
+				F515B436AAD68535D02EB50410A8A7D1 /* YBPlayerAdapter.h in Headers */,
+				D2CED64E3AE656420460E1318966EBD8 /* YBPlayheadMonitor.h in Headers */,
+				28F0810441E248723E0F800412AA8551 /* YBPlugin.h in Headers */,
+				84D7C0A293E0ABBBA9882D2BC4EE661A /* YBRequest.h in Headers */,
+				6011C7CA5C49857E32AEC444AB39B6F5 /* YBRequestBuilder.h in Headers */,
+				2E94F7CBEA05314EE6656EF7E70E1FD0 /* YBResourceTransform.h in Headers */,
+				3C8642B6EEFC8CA483CB1B193B42ADEB /* YBTimer.h in Headers */,
+				23E1A3E1D84F32ED8AE7FAB770D2129F /* YBTimestampLastSentTransform.h in Headers */,
+				B76E1E04F9F70B9AD09C633B3B44EC8A /* YBTransform.h in Headers */,
+				65C25F6FF3B5F13E00F2E204DBA5AADF /* YBTransformSubclass.h in Headers */,
+				DB4CFB62234062CAE93E3B20D24CE2B1 /* YBViewTransform.h in Headers */,
+				81FF6545DDC209D9CD4A4407691E00DD /* YBYouboraUtils.h in Headers */,
+				DBBFC7CF488691354A9CFB223E0E4F5E /* YouboraLib.h in Headers */,
+				00A737C933CB34880AC210296AB27411 /* YouboraLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		109DD32F959A563FBB1CDC8008856482 /* YouboraLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70ECBFC7CC5F58D32DBA489A2204FE6 /* Build configuration list for PBXNativeTarget "YouboraLib" */;
+			buildPhases = (
+				919C7A07DCDBADD0FA7B0E5B30116731 /* Headers */,
+				C1D43391AD2974971030A076F641DABC /* Sources */,
+				51C4AF88797FBE4906BDB9CF52016C56 /* Frameworks */,
+				4441523434945FB9BAD60725E13157CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouboraLib;
+			productName = YouboraLib;
+			productReference = 090F3296348AF062FD8F1CD3B0D5335A /* YouboraLib */;
+			productType = "com.apple.product-type.framework";
+		};
+		788E88F51165F238C971D4F6B372B4CC /* ComScore-SCORBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B4F8DB409C3AB052154E9C44131AE42 /* Build configuration list for PBXNativeTarget "ComScore-SCORBundle" */;
+			buildPhases = (
+				8DE54BA4AC3C802BA861A0E173380720 /* Sources */,
+				0A8B14E94116B30B51B0EE1D42F86265 /* Frameworks */,
+				8D980A247745C5503525633894D466B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ComScore-SCORBundle";
+			productName = SCORBundle;
+			productReference = B75F76BD5DA3594AC326D6F7ED77FD96 /* ComScore-SCORBundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A281CD38C48E48DD156841D0F4728AB3 /* YouboraAVPlayerAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBF7B95AC3E7F1D8735262DB3A5126A /* Build configuration list for PBXNativeTarget "YouboraAVPlayerAdapter" */;
+			buildPhases = (
+				8E29B52DF79CCA0138E284CC36B8C92F /* Headers */,
+				071599E35D6B8B9A112AF0E0A4C8C127 /* Sources */,
+				82DACAA0D8893DA1CEF630B6361F18AE /* Frameworks */,
+				2E5EC75D8D700EB07AACA46BD5B28841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B46E99990EA99DE1D325D005E163DE8 /* PBXTargetDependency */,
+			);
+			name = YouboraAVPlayerAdapter;
+			productName = YouboraAVPlayerAdapter;
+			productReference = 2336B8C0288E7827DAC58BA9CE8F2B76 /* YouboraAVPlayerAdapter */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF184B24A21E934BC18A140154DB6A02 /* Pods-SDKQAiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55F14691F7BFD3BED7901C26D88D4CF3 /* Build configuration list for PBXNativeTarget "Pods-SDKQAiOS" */;
+			buildPhases = (
+				109219362D83FA78C93A359048C032FD /* Headers */,
+				85EBA6079ADE9E7047D68E63AB958B18 /* Sources */,
+				ECCD06409A3A7BDD229A4B5639F27336 /* Frameworks */,
+				2FEA663F8FD1C84C5AB46D9ED30DC317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF8731BB4EDE886DE0D16F0D73625701 /* PBXTargetDependency */,
+				56FEC8811A9646CF6EB550A0F3DCB775 /* PBXTargetDependency */,
+				5F0C959E90CBA2C82B38ED7F1247828F /* PBXTargetDependency */,
+				4AA403168AA10C84917EF7CB6B0105CB /* PBXTargetDependency */,
+				0D407D06EB9EB625C1C813B654B05E85 /* PBXTargetDependency */,
+				F82CFB6AADB59CA4D7EA1CFF4A0E905B /* PBXTargetDependency */,
+			);
+			name = "Pods-SDKQAiOS";
+			productName = Pods_SDKQAiOS;
+			productReference = C076166DB618F897084583673935924C /* Pods-SDKQAiOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC6103043D47A7FD54554DF66EE8ACBE /* google-cast-sdk-GoogleCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAE846F98E69A58F306A14744D7C964 /* Build configuration list for PBXNativeTarget "google-cast-sdk-GoogleCast" */;
+			buildPhases = (
+				66BF050346999B2C6232499A76D6989F /* Sources */,
+				33B829597EE5A4B45609CAD2F7DF721E /* Frameworks */,
+				D2E0101AD8470EBD3DEC5B11D04349C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "google-cast-sdk-GoogleCast";
+			productName = GoogleCast;
+			productReference = C585E5499AB32AC4EB312B95552FAE51 /* google-cast-sdk-GoogleCast */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BA2F6BEB1665C1BFC87A9768D09A275B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				945556DAFDFA02EFEDA7464C5F25528D /* ComScore */,
+				788E88F51165F238C971D4F6B372B4CC /* ComScore-SCORBundle */,
+				2F18BE6E33A356D3FF55C61358764E69 /* google-cast-sdk */,
+				FC6103043D47A7FD54554DF66EE8ACBE /* google-cast-sdk-GoogleCast */,
+				7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */,
+				7DC6C4E3376815AFA779788BA80B0A56 /* MediastreamPlatformSDKxC */,
+				AF184B24A21E934BC18A140154DB6A02 /* Pods-SDKQAiOS */,
+				A281CD38C48E48DD156841D0F4728AB3 /* YouboraAVPlayerAdapter */,
+				109DD32F959A563FBB1CDC8008856482 /* YouboraLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E5EC75D8D700EB07AACA46BD5B28841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FEA663F8FD1C84C5AB46D9ED30DC317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4441523434945FB9BAD60725E13157CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D980A247745C5503525633894D466B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C71BE8752BF33F736263DF5BA01081 /* .pod in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E0101AD8470EBD3DEC5B11D04349C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40899EF1E356DEFB2ECC836D052374F /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34C560B906D648F5E1173388CD967FBB /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoogleAds-IMA-iOS-SDK/GoogleAds-IMA-iOS-SDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GoogleAds-IMA-iOS-SDK/GoogleAds-IMA-iOS-SDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GoogleAds-IMA-iOS-SDK/GoogleAds-IMA-iOS-SDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3872AB0D29A217E992220853259620D8 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MediastreamPlatformSDKxC/MediastreamPlatformSDKxC-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MediastreamPlatformSDKxC/MediastreamPlatformSDKxC-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MediastreamPlatformSDKxC/MediastreamPlatformSDKxC-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA3970859354AFA2BCAA5FE66757895 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/google-cast-sdk/google-cast-sdk-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/google-cast-sdk/google-cast-sdk-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/google-cast-sdk/google-cast-sdk-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F6978459B4A76214594C4729533269D /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/ComScore/ComScore-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/ComScore/ComScore-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/ComScore/ComScore-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071599E35D6B8B9A112AF0E0A4C8C127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E85C48826BF2790B8DD0BF1DD6FE4F /* YBAVPlayerAdapter.m in Sources */,
+				89AEDAF2F2007774DCA1FDE3654D6DB3 /* YBAVPlayerAdapterSwiftTranformer.m in Sources */,
+				12E4BAB9EDC213C77E3358BBB47CF21F /* YBAVPlayerAdapterSwiftWrapper.m in Sources */,
+				73D77049DB87EE02C99A0DFD4B5B58A8 /* YouboraAVPlayerAdapter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66BF050346999B2C6232499A76D6989F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85EBA6079ADE9E7047D68E63AB958B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5EB80EE8225E2B148E43110581467D7 /* Pods-SDKQAiOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE54BA4AC3C802BA861A0E173380720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1D43391AD2974971030A076F641DABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB82CB667A8E0590AED56ED38995B34 /* YBAppDatabase.m in Sources */,
+				DCBE7E701B37180C1467981CBD71D896 /* YBCdnConfig.m in Sources */,
+				AC13F814F78BB37335B95B4C89CF307F /* YBCdnParser.m in Sources */,
+				9EDF24E6F527946204806AE3973E5C3E /* YBChrono.m in Sources */,
+				F73B8EA1E7965A4606E75C83E54A8D66 /* YBCommunication.m in Sources */,
+				5DB9C8A6D42B0C8941865F909ED5D428 /* YBConstants.m in Sources */,
+				85BF098017EAAC73D91FC7CE31AFD4E3 /* YBDeviceInfo.m in Sources */,
+				511244E8DBA9B665C134CDA83858A62A /* YBEvent.m in Sources */,
+				D3D7CCC57A20DD339E6C6B2233C9F273 /* YBEventDAO.m in Sources */,
+				6F31113ECFC19DE28019466FDBD2C28A /* YBEventDataSource.m in Sources */,
+				A292C066C20A20BE50CE9E083E193E5A /* YBEventQueries.m in Sources */,
+				7B4A9A117B9590B855528839FA4F2C5B /* YBFastDataConfig.m in Sources */,
+				E2B5E79D872EF8606784805BFE5648B9 /* YBFlowTransform.m in Sources */,
+				F0E8C70AD6F70B32C502B334E54FD67D /* YBHlsParser.m in Sources */,
+				151FE4D71377C4C12849DDEA6970B0F7 /* YBInfinity.m in Sources */,
+				866512C6662F82BE9DA4D6B40A250A8A /* YBInfinityFlags.m in Sources */,
+				3E1EE62F99305CBDA6B725018053A209 /* YBInfinityLocalManager.m in Sources */,
+				BD8295916DD71E75858987ECCE840A79 /* YBLog.m in Sources */,
+				C8C648C2286E052A2EC74E40B0C8DD39 /* YBNqs6Transform.m in Sources */,
+				4AD82E6DC694BDB63E15E1043C80AB79 /* YBOfflineTransform.m in Sources */,
+				288809BABA3A34233991E582A544AD41 /* YBOptions.m in Sources */,
+				473A7FE8CFFCB041B048E91DB086FEAD /* YBParsableResponseHeader.m in Sources */,
+				879674413FC46F6AF36CE74BE73BCBA2 /* YBPlaybackChronos.m in Sources */,
+				4331712AC09312037908B02E8CA2EC90 /* YBPlaybackFlags.m in Sources */,
+				4264F484566302B422F0303BA9557BA7 /* YBPlayerAdapter.m in Sources */,
+				F28082E9FBE9897C1E7831D8CB1F8A69 /* YBPlayheadMonitor.m in Sources */,
+				7706068DC4F535B9B6BCEA431368BDF8 /* YBPlugin.m in Sources */,
+				3677D9602E8DD71B5C2935780B80F787 /* YBRequest.m in Sources */,
+				BD8976FF7B1BF2401F6D6F9971C51251 /* YBRequestBuilder.m in Sources */,
+				84417A1DE4159013EED36A6EA89C0FD8 /* YBResourceTransform.m in Sources */,
+				F947A46EB6ADCEE103BCCF6CEB62ED68 /* YBTimer.m in Sources */,
+				6BBD7688C503BBCB93045FA17F0B67BD /* YBTimestampLastSentTransform.m in Sources */,
+				8DD86A91B1C0225FF3B5AABA588A6F96 /* YBTransform.m in Sources */,
+				3E7B293233DEE1F0DCC71567178365AA /* YBViewTransform.m in Sources */,
+				5B3140E9FD9273A8C348ADB6DE4BC407 /* YBYouboraUtils.m in Sources */,
+				A75B5A4ACC1B0EF387222277AC38D92C /* YouboraLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03F3F8C09C504D863DDCC600E959633D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-iOS-SDK";
+			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
+			targetProxy = 7B69DB7A051DDB9CC744A24BFB080841 /* PBXContainerItemProxy */;
+		};
+		0B46E99990EA99DE1D325D005E163DE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraLib;
+			target = 109DD32F959A563FBB1CDC8008856482 /* YouboraLib */;
+			targetProxy = 0EBACD37B3F17FF5AD940B8C76E29032 /* PBXContainerItemProxy */;
+		};
+		0D407D06EB9EB625C1C813B654B05E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraLib;
+			target = 109DD32F959A563FBB1CDC8008856482 /* YouboraLib */;
+			targetProxy = 967D72E12A3015F964FFAD14746ECEA8 /* PBXContainerItemProxy */;
+		};
+		1FD99860F3B63430BA638D125EB4E57D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ComScore;
+			target = 945556DAFDFA02EFEDA7464C5F25528D /* ComScore */;
+			targetProxy = 23B7FCC6A0FD8D480A6B68493A2C0739 /* PBXContainerItemProxy */;
+		};
+		4AA403168AA10C84917EF7CB6B0105CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraAVPlayerAdapter;
+			target = A281CD38C48E48DD156841D0F4728AB3 /* YouboraAVPlayerAdapter */;
+			targetProxy = 2FEEFD0F1682A602EDBC283EEDCEE788 /* PBXContainerItemProxy */;
+		};
+		5138245ACCFCE133E46CAB1F21BC6EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraAVPlayerAdapter;
+			target = A281CD38C48E48DD156841D0F4728AB3 /* YouboraAVPlayerAdapter */;
+			targetProxy = 812861F01AF18257E7ED613B722133FB /* PBXContainerItemProxy */;
+		};
+		56FEC8811A9646CF6EB550A0F3DCB775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAds-IMA-iOS-SDK";
+			target = 7362DAB47E2EFA5452F30DD7E9830B56 /* GoogleAds-IMA-iOS-SDK */;
+			targetProxy = 5C10DAAC03B4D31AAB561DB8C8BC686D /* PBXContainerItemProxy */;
+		};
+		5F0C959E90CBA2C82B38ED7F1247828F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediastreamPlatformSDKxC;
+			target = 7DC6C4E3376815AFA779788BA80B0A56 /* MediastreamPlatformSDKxC */;
+			targetProxy = 9E4806A9808AF6EF6F10E7AC1AAAAD1F /* PBXContainerItemProxy */;
+		};
+		97CB4BC159F15A7100BC505F15B15767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ComScore-SCORBundle";
+			target = 788E88F51165F238C971D4F6B372B4CC /* ComScore-SCORBundle */;
+			targetProxy = 2C371A6D36A3EA5E4317F4A03113151D /* PBXContainerItemProxy */;
+		};
+		B6030338297787BAAC8E1D209355D277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "google-cast-sdk-GoogleCast";
+			target = FC6103043D47A7FD54554DF66EE8ACBE /* google-cast-sdk-GoogleCast */;
+			targetProxy = 1B188671FCAD073080E026EE1D34186B /* PBXContainerItemProxy */;
+		};
+		D53BA3FC599D0614FF054E0C0742CA8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraLib;
+			target = 109DD32F959A563FBB1CDC8008856482 /* YouboraLib */;
+			targetProxy = E2C8EE8961E94651C08D278A51CF1CF2 /* PBXContainerItemProxy */;
+		};
+		DF8731BB4EDE886DE0D16F0D73625701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ComScore;
+			target = 945556DAFDFA02EFEDA7464C5F25528D /* ComScore */;
+			targetProxy = DA8F2F8A963C7BACD40AB370B8271A5B /* PBXContainerItemProxy */;
+		};
+		F82CFB6AADB59CA4D7EA1CFF4A0E905B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "google-cast-sdk";
+			target = 2F18BE6E33A356D3FF55C61358764E69 /* google-cast-sdk */;
+			targetProxy = 058E9A125BFC1FBE2B78D08737F2504C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15028942FB457EA439F9857CDDE58C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9EE23E6FB39682BD4C46B711D757CD /* google-cast-sdk.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/google-cast-sdk";
+				IBSC_MODULE = GoogleCast;
+				INFOPLIST_FILE = "Target Support Files/google-cast-sdk/ResourceBundle-GoogleCast-google-cast-sdk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GoogleCast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		329A053F13C2425D00ED972F1F46C3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74975BFF4851504C5D833992A1719FE7 /* Pods-SDKQAiOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44A4B2FB6211B90C1949A44A381F6D1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4D930AC1AE706EEFCD7B9E7D884EA8A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB20DB5DC38A6EEC34CD5BD97B84C6C4 /* MediastreamPlatformSDKxC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62972AB68EBF3228C52F14936AA0473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5DA201BB4750580A33D3596F1BC6BF /* YouboraLib.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/YouboraLib/YouboraLib-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/YouboraLib/YouboraLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouboraLib/YouboraLib.modulemap";
+				PRODUCT_MODULE_NAME = YouboraLib;
+				PRODUCT_NAME = YouboraLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72BB68894071F5C5864FA3008971DF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A4F5CA936133B0F99814C3B0591D50 /* ComScore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F05F099D639060D90DC56CA0C513B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A537A92B0434192C4BA8D585348D66CB /* google-cast-sdk.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/google-cast-sdk";
+				IBSC_MODULE = GoogleCast;
+				INFOPLIST_FILE = "Target Support Files/google-cast-sdk/ResourceBundle-GoogleCast-google-cast-sdk-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GoogleCast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A0DC1C2C814704734F83EAB35BB20B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A37A1F22FBD07C05548B32F613B55517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDD2FFBD71612C67104C0DE19649E2A /* GoogleAds-IMA-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFE3AE7A1C83DFBD5E278DEE49D2164C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA7190B6DD11CA9C5D303D4FEC8448FC /* YouboraAVPlayerAdapter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.modulemap";
+				PRODUCT_MODULE_NAME = YouboraAVPlayerAdapter;
+				PRODUCT_NAME = YouboraAVPlayerAdapter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5621481A8EBEA84496E16EFB175257A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B821975CA2791FF624A9DC42721FF6 /* GoogleAds-IMA-iOS-SDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9FFCF43D1928C0356E43026232543A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0A2FDAFEE79EEA7458F77E4AC12B2E /* YouboraLib.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/YouboraLib/YouboraLib-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/YouboraLib/YouboraLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouboraLib/YouboraLib.modulemap";
+				PRODUCT_MODULE_NAME = YouboraLib;
+				PRODUCT_NAME = YouboraLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8B86B80845E6E6265A51D7BC5DB7462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574D8A291A5ED22BC8FB1513AA404A96 /* YouboraAVPlayerAdapter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YouboraAVPlayerAdapter/YouboraAVPlayerAdapter.modulemap";
+				PRODUCT_MODULE_NAME = YouboraAVPlayerAdapter;
+				PRODUCT_NAME = YouboraAVPlayerAdapter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFAB8729C38857C729B7294D28EB139B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FDD25993368544A4E500B589FDB6B9 /* ComScore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD7421CAB0B4644EA750E2A4BFFFCB15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33F66EC46AABEAFCF6127A99D24254C /* MediastreamPlatformSDKxC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE10232980AAED961EFA5A48F922BCC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A4F5CA936133B0F99814C3B0591D50 /* ComScore.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ComScore";
+				IBSC_MODULE = ComScore;
+				INFOPLIST_FILE = "Target Support Files/ComScore/ResourceBundle-SCORBundle-ComScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = SCORBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E3BAE26AC95E30943613259E0D9429E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FDD25993368544A4E500B589FDB6B9 /* ComScore.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ComScore";
+				IBSC_MODULE = ComScore;
+				INFOPLIST_FILE = "Target Support Files/ComScore/ResourceBundle-SCORBundle-ComScore-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = SCORBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E9B100D705F10766A527A6B9CBECB3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9EE23E6FB39682BD4C46B711D757CD /* google-cast-sdk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F929D6950A9D7AEC32B48511F4D63B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A537A92B0434192C4BA8D585348D66CB /* google-cast-sdk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F967EA3416FA3EAA333A801BBDE5A1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4898C1F12168B668B59D68FAA723E1D6 /* Pods-SDKQAiOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021ADF7AEBBC9CDA9C63B44280091257 /* Build configuration list for PBXAggregateTarget "MediastreamPlatformSDKxC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7421CAB0B4644EA750E2A4BFFFCB15 /* Debug */,
+				4D930AC1AE706EEFCD7B9E7D884EA8A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085A8A84906A92B4A497F4407DEA6ABA /* Build configuration list for PBXAggregateTarget "ComScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72BB68894071F5C5864FA3008971DF87 /* Debug */,
+				CFAB8729C38857C729B7294D28EB139B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B4F8DB409C3AB052154E9C44131AE42 /* Build configuration list for PBXNativeTarget "ComScore-SCORBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE10232980AAED961EFA5A48F922BCC1 /* Debug */,
+				E3BAE26AC95E30943613259E0D9429E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABA5F09EC43807FFA362AE56AD22924 /* Build configuration list for PBXAggregateTarget "GoogleAds-IMA-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A37A1F22FBD07C05548B32F613B55517 /* Debug */,
+				B5621481A8EBEA84496E16EFB175257A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DC1C2C814704734F83EAB35BB20B21 /* Debug */,
+				44A4B2FB6211B90C1949A44A381F6D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55F14691F7BFD3BED7901C26D88D4CF3 /* Build configuration list for PBXNativeTarget "Pods-SDKQAiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				329A053F13C2425D00ED972F1F46C3B4 /* Debug */,
+				F967EA3416FA3EAA333A801BBDE5A1AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80E482638F9A187CBDC984E4AB0CAD7E /* Build configuration list for PBXAggregateTarget "google-cast-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B100D705F10766A527A6B9CBECB3EC /* Debug */,
+				F929D6950A9D7AEC32B48511F4D63B27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBF7B95AC3E7F1D8735262DB3A5126A /* Build configuration list for PBXNativeTarget "YouboraAVPlayerAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8B86B80845E6E6265A51D7BC5DB7462 /* Debug */,
+				AFE3AE7A1C83DFBD5E278DEE49D2164C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70ECBFC7CC5F58D32DBA489A2204FE6 /* Build configuration list for PBXNativeTarget "YouboraLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62972AB68EBF3228C52F14936AA0473C /* Debug */,
+				B9FFCF43D1928C0356E43026232543A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAE846F98E69A58F306A14744D7C964 /* Build configuration list for PBXNativeTarget "google-cast-sdk-GoogleCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15028942FB457EA439F9857CDDE58C06 /* Debug */,
+				7F05F099D639060D90DC56CA0C513B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

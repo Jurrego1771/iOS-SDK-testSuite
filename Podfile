@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SDKQAiOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SDKQAiOS
+  pod 'MediastreamPlatformSDKxC', '~> 3.0.0-alpha.14'
+  # Cast: solo la app host lo usa; el SDK no depende de él.
+  pod 'google-cast-sdk'
+end
