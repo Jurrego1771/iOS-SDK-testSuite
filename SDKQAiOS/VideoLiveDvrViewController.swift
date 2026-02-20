@@ -17,6 +17,9 @@ class VideoLiveDvrViewController: UIViewController {
     var sdk: MediastreamPlatformSDK?
     private var currentModeIndex = 0
 
+    private lazy var playButton = UIButton(type: .system)
+    private lazy var pauseButton = UIButton(type: .system)
+
     private lazy var modeLabel: UILabel = {
         let label = UILabel()
         label.text = "PLAYBACK MODE"
@@ -36,8 +39,7 @@ class VideoLiveDvrViewController: UIViewController {
     }
 
     private func setupHiddenTestControls() {
-        // Botón de Play oculto para tests UI
-        let playButton = UIButton(type: .system)
+        // Configurar botón de Play oculto para tests UI
         playButton.setTitle("Play", for: .normal)
         playButton.accessibilityIdentifier = "dvr.hostPlay"
         playButton.isHidden = true
@@ -45,8 +47,7 @@ class VideoLiveDvrViewController: UIViewController {
         playButton.addTarget(self, action: #selector(hostPlayTapped), for: .touchUpInside)
         view.addSubview(playButton)
 
-        // Botón de Pause oculto para tests UI
-        let pauseButton = UIButton(type: .system)
+        // Configurar botón de Pause oculto para tests UI
         pauseButton.setTitle("Pause", for: .normal)
         pauseButton.accessibilityIdentifier = "dvr.hostPause"
         pauseButton.isHidden = true
