@@ -51,6 +51,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = testCase.displayTitle
         cell.detailTextLabel?.text = testCase.category.displayName
         cell.accessoryType = .disclosureIndicator
+        cell.accessibilityIdentifier = "testCase.\(testCase.type.rawValue)"
         return cell
     }
 
