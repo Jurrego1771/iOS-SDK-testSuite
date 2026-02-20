@@ -55,10 +55,9 @@ final class VideoLiveDvrUITests: XCTestCase {
 
         // Play/Pause en Live
         tapPauseIfAvailable(app)
-        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 10)
-
+        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 5)
         tapPlayIfAvailable(app)
-        waitForAnyEventReadyOrPlay(stateLabel, timeout: 15)
+        waitForStateLabel(stateLabel, contains: "event=play", timeout: 5)
 
         // Cambiar a DVR
         segmented.buttons["DVR"].tap()
@@ -67,10 +66,24 @@ final class VideoLiveDvrUITests: XCTestCase {
 
         // Play/Pause en DVR
         tapPauseIfAvailable(app)
-        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 10)
-
+        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 5)
         tapPlayIfAvailable(app)
-        waitForAnyEventReadyOrPlay(stateLabel, timeout: 15)
+        waitForStateLabel(stateLabel, contains: "event=play", timeout: 5)
+
+        // Volver a Live
+        segmented.buttons["Live"].tap()
+        waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
+        waitForAnyEventReadyOrPlay(stateLabel, timeout: 20)
+
+        // Pausar
+        tapPauseIfAvailable(app)
+        waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
+        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 5)
+
+        // Reanudar
+        tapPlayIfAvailable(app)
+        waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
+        waitForStateLabel(stateLabel, contains: "event=play", timeout: 5)
 
         // Seek en DVR (si hay slider)
         if let slider = firstSeekSlider(app) {
