@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MediastreamPlatformSDKiOS
 
 /// Controles ocultos para tests UI (botón para adjuntar spy, reset, etc.).
 class TestControlsViewController: UIViewController {

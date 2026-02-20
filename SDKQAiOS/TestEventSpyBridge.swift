@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MediastreamPlatformSDKiOS
 
 /// Puente para que los tests UI adjunten un spy al SDK y lean eventos.
 class TestEventSpyBridge {
