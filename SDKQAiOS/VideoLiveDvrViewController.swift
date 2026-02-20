@@ -23,6 +23,7 @@ class VideoLiveDvrViewController: UIViewController {
         label.font = .systemFont(ofSize: 12, weight: .medium)
         label.textColor = .secondaryLabel
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.accessibilityIdentifier = "dvr.stateLabel"
         return label
     }()
 
@@ -31,6 +32,7 @@ class VideoLiveDvrViewController: UIViewController {
         control.selectedSegmentIndex = 0
         control.addTarget(self, action: #selector(modeChanged), for: .valueChanged)
         control.translatesAutoresizingMaskIntoConstraints = false
+        control.accessibilityIdentifier = "dvr.modeSegmented"
         if #available(iOS 13.0, *) {
             control.selectedSegmentTintColor = UIColor.systemTeal
         }
@@ -55,6 +57,7 @@ class VideoLiveDvrViewController: UIViewController {
         view.addSubview(mdstrm.view)
         mdstrm.didMove(toParent: self)
         mdstrm.view.translatesAutoresizingMaskIntoConstraints = false
+        mdstrm.view.accessibilityIdentifier = "dvr.playerView"
         sdk = mdstrm
 
         view.addSubview(bottomBar)

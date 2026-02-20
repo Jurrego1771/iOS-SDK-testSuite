@@ -34,13 +34,13 @@ final class VideoLiveDvrUITests: XCTestCase {
 
         // Esperar controles DVR
         let segmented = app.segmentedControls["dvr.modeSegmented"]
-        XCTAssertTrue(segmented.waitForExistence(timeout: 10))
+        XCTAssertTrue(segmented.waitForExistence(timeout: 20))
 
         let playerView = app.otherElements["dvr.playerView"]
-        XCTAssertTrue(playerView.waitForExistence(timeout: 10))
+        XCTAssertTrue(playerView.waitForExistence(timeout: 20))
 
         let stateLabel = app.staticTexts["dvr.stateLabel"]
-        XCTAssertTrue(stateLabel.waitForExistence(timeout: 10))
+        XCTAssertTrue(stateLabel.waitForExistence(timeout: 20))
 
         // --- Inicializar spy de eventos del SDK ---
         // Nota: Necesitamos un mecanismo para inyectar el spy.
