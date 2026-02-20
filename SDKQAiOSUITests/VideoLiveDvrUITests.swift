@@ -90,7 +90,8 @@ final class VideoLiveDvrUITests: XCTestCase {
         // --- Asserts de eventos del SDK ---
         // Nota: Necesitamos acceso al spy desde la app. Por ahora, simulamos lectura de eventos via label.
         // En una implementación real, inyectaríamos el spy y leeríamos sus propiedades.
-        if let eventsLabel = app.staticTexts["test.spyEvents"].firstMatch, eventsLabel.exists {
+        let eventsLabel = app.staticTexts["test.spyEvents"].firstMatch
+        if eventsLabel.exists {
             let eventsText = eventsLabel.label
             XCTAssertTrue(eventsText.contains("ready"))
             XCTAssertTrue(eventsText.contains("play"))

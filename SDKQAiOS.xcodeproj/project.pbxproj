@@ -10,7 +10,18 @@
 		5D1A042A4533B2AD40AC6405 /* Pods_SDKQAiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A009C92CFF832E5695828D /* Pods_SDKQAiOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B91CA8D2F48D23300E49442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8262CFB2F322BB20032DC85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8262D022F322BB20032DC85;
+			remoteInfo = SDKQAiOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5B91CA872F48D23300E49442 /* SDKQAiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKQAiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		663F1E6F5076EDB2A55680A7 /* Pods-SDKQAiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKQAiOS.debug.xcconfig"; path = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A009C92CFF832E5695828D /* Pods_SDKQAiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKQAiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92A248B6E3C1759EF4BB7D9 /* Pods-SDKQAiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKQAiOS.release.xcconfig"; path = "Target Support Files/Pods-SDKQAiOS/Pods-SDKQAiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -28,6 +39,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5B91CA882F48D23300E49442 /* SDKQAiOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SDKQAiOSUITests;
+			sourceTree = "<group>";
+		};
 		C8262D052F322BB20032DC85 /* SDKQAiOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -39,6 +55,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B91CA842F48D23300E49442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8262D002F322BB20032DC85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				C8262D052F322BB20032DC85 /* SDKQAiOS */,
+				5B91CA882F48D23300E49442 /* SDKQAiOSUITests */,
 				C8262D042F322BB20032DC85 /* Products */,
 				6949FABFB079F8C10DB715B9 /* Pods */,
 				73CF13FA82411B0268E894BA /* Frameworks */,
@@ -81,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C8262D032F322BB20032DC85 /* SDKQAiOS.app */,
+				5B91CA872F48D23300E49442 /* SDKQAiOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +113,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5B91CA862F48D23300E49442 /* SDKQAiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B91CA912F48D23300E49442 /* Build configuration list for PBXNativeTarget "SDKQAiOSUITests" */;
+			buildPhases = (
+				5B91CA832F48D23300E49442 /* Sources */,
+				5B91CA842F48D23300E49442 /* Frameworks */,
+				5B91CA852F48D23300E49442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B91CA8E2F48D23300E49442 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5B91CA882F48D23300E49442 /* SDKQAiOSUITests */,
+			);
+			name = SDKQAiOSUITests;
+			packageProductDependencies = (
+			);
+			productName = SDKQAiOSUITests;
+			productReference = 5B91CA872F48D23300E49442 /* SDKQAiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		C8262D022F322BB20032DC85 /* SDKQAiOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8262D162F322BB50032DC85 /* Build configuration list for PBXNativeTarget "SDKQAiOS" */;
@@ -121,6 +169,10 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					5B91CA862F48D23300E49442 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = C8262D022F322BB20032DC85;
+					};
 					C8262D022F322BB20032DC85 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -141,11 +193,19 @@
 			projectRoot = "";
 			targets = (
 				C8262D022F322BB20032DC85 /* SDKQAiOS */,
+				5B91CA862F48D23300E49442 /* SDKQAiOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B91CA852F48D23300E49442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8262D012F322BB20032DC85 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +283,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B91CA832F48D23300E49442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C8262CFF2F322BB20032DC85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,7 +299,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5B91CA8E2F48D23300E49442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8262D022F322BB20032DC85 /* SDKQAiOS */;
+			targetProxy = 5B91CA8D2F48D23300E49442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5B91CA8F2F48D23300E49442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW6NW65M2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jurrego.SDKQAiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDKQAiOS;
+			};
+			name = Debug;
+		};
+		5B91CA902F48D23300E49442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW6NW65M2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jurrego.SDKQAiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDKQAiOS;
+			};
+			name = Release;
+		};
 		C8262D172F322BB50032DC85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 663F1E6F5076EDB2A55680A7 /* Pods-SDKQAiOS.debug.xcconfig */;
@@ -435,6 +550,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B91CA912F48D23300E49442 /* Build configuration list for PBXNativeTarget "SDKQAiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B91CA8F2F48D23300E49442 /* Debug */,
+				5B91CA902F48D23300E49442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C8262CFE2F322BB20032DC85 /* Build configuration list for PBXProject "SDKQAiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
