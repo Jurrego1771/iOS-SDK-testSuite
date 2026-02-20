@@ -26,11 +26,8 @@ final class VideoLiveDvrUITests: XCTestCase {
 
         // Abrir Video Live DVR
         let liveDvrCell = table.cells["testCase.videoLiveDvr"]
-        if liveDvrCell.exists {
-            liveDvrCell.tap()
-        } else {
-            table.cells.staticTexts["Video: Live DVR"].firstMatch.tap()
-        }
+        XCTAssertTrue(liveDvrCell.waitForExistence(timeout: 5))
+        liveDvrCell.tap()
 
         // Esperar controles DVR
         let segmented = app.segmentedControls["dvr.modeSegmented"]
