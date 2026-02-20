@@ -121,7 +121,7 @@ class VideoLiveDvrViewController: UIViewController {
             bottomBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bottomBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            bottomBar.heightAnchor.constraint(equalToConstant: 88),
+            bottomBar.heightAnchor.constraint(equalToConstant: 100),
 
             modeLabel.topAnchor.constraint(equalTo: bottomBar.topAnchor, constant: 12),
             modeLabel.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 16),
@@ -130,15 +130,7 @@ class VideoLiveDvrViewController: UIViewController {
             modeSegmented.topAnchor.constraint(equalTo: modeLabel.bottomAnchor, constant: 8),
             modeSegmented.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 16),
             modeSegmented.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor, constant: -16),
-            modeSegmented.heightAnchor.constraint(equalToConstant: 32),
-
-            playButton.topAnchor.constraint(equalTo: modeSegmented.bottomAnchor, constant: 8),
-            playButton.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 16),
-            playButton.widthAnchor.constraint(equalToConstant: 60),
-
-            pauseButton.topAnchor.constraint(equalTo: modeSegmented.bottomAnchor, constant: 8),
-            pauseButton.leadingAnchor.constraint(equalTo: playButton.trailingAnchor, constant: 8),
-            pauseButton.widthAnchor.constraint(equalToConstant: 60)
+            modeSegmented.heightAnchor.constraint(equalToConstant: 32)
         ])
 
         // Actualizar label con modo inicial
