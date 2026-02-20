@@ -88,7 +88,7 @@ final class VideoLiveDvrUITests: XCTestCase {
         // Seek en DVR (si hay slider)
         if let slider = firstSeekSlider(app) {
             slider.adjust(toNormalizedSliderPosition: 0.2)
-            waitForStateLabelIfPresent(stateLabel, contains: "event=seek", timeout: 5)
+            waitForStateLabel(stateLabel, contains: "event=seek", timeout: 5)
             waitForAnyEventReadyOrPlay(stateLabel, timeout: 20)
         }
 
@@ -96,6 +96,16 @@ final class VideoLiveDvrUITests: XCTestCase {
         segmented.buttons["Live"].tap()
         waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
         waitForAnyEventReadyOrPlay(stateLabel, timeout: 20)
+
+        // Pausar
+        tapPauseIfAvailable(app)
+        waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
+        waitForStateLabel(stateLabel, contains: "event=pause", timeout: 5)
+
+        // Reanudar
+        tapPlayIfAvailable(app)
+        waitForStateLabel(stateLabel, contains: "mode=Live", timeout: 5)
+        waitForStateLabel(stateLabel, contains: "event=play", timeout: 5)
 
         // --- Asserts de eventos del SDK ---
         // Nota: Necesitamos acceso al spy desde la app. Por ahora, simulamos lectura de eventos via label.
@@ -110,6 +120,12 @@ final class VideoLiveDvrUITests: XCTestCase {
             if eventsText.contains("seek") {
                 XCTAssertTrue(eventsText.contains("seek"))
             }
+            // Buffering es opcional (puede no ocurrir)
+            if eventsText.contains("buffering") {
+                XCTAssertTrue(eventsText.contains("buffering"))
+            }
+            // Error no debería ocurrir en flujo normal
+            XCTAssertFalse(eventsText.contains("error"))
         }
     }
 
