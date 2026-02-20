@@ -1,6 +1,6 @@
 //
 //  SDKEventSpy.swift
-//  SDKQAiOSUITests
+//  SDKQAiOS
 //
 //  Helper para capturar eventos del SDK y valores clave en tests UI.
 //
